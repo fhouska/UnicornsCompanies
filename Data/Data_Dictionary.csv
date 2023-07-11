@@ -1,0 +1,8 @@
+Company:Company name
+Valuation: Company valuation in billions (B) of dollars
+Date Joined: The date in which the company reached $1 billion in valuation
+Country,Country the company was founded in
+Industry: Company industry
+Investors,Top 4 investing firms or individual investors (some have less than 4)
+Year, Year of the list
+City: City the company was founded in.
