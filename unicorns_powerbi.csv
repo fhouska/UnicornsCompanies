@@ -1421,7 +1421,7 @@ Promasidor Holdings,1.58,2016-11-08,South Africa,Consumer & retail,"IFC, Ajinomo
 Northvolt,1.57,2019-06-12,Sweden,Other,"Vattenfall, Volkswagen Group, Goldman Sachs",2019-12-31,2019,no_data
 Oxford Nanopore Technologies,1.55,2015-07-21,United Kingdom,Health,"Illumina, Invesco Perpetual, IP Group",2019-12-31,2019,no_data
 Mu Sigma,1.5,2013-02-07,United States,Data management & analytics,"Sequoia Capital, General Atlantic",2019-12-31,2019,no_data
-STX Entertainment,1.5,2016-08-10,United States,Other,"Tencent, TPG Growth, Hony Capital",2019-12-31,2019,no_data
+STX Entertainment,1.5,2016-08-10,United States,Entertainment,"Tencent, TPG Growth, Hony Capital",2019-12-31,2019,no_data
 Tujia,1.5,2015-06-17,China,Travel,"GGV Capital, QiMing Venture Partnersl",2019-12-31,2019,no_data
 ironSource,1.5,2014-08-11,Israel,Mobile & telecommunications,"Access Industries, Clal
 	  Industries and Investments",2019-12-31,2019,no_data
@@ -2181,7 +2181,7 @@ Instacart,39.0,2014-12-30,United States,"Supply chain, logistics, & delivery","K
 Databricks,38.0,2019-02-05,United States,Data management & analytics,"Andreessen Horowitz, New Enterprise Associates, Battery Ventures",2021-12-31,2021,San Francisco
 Revolut,33.0,2018-04-26,United Kingdom,Fintech,"index Ventures, DST Global, Ribbit Capital",2021-12-31,2021,London
 Chime,25.0,2019-03-05,United States,Fintech,"Forerunner Ventures, Crosslink Capital, Homebrew",2021-12-31,2021,San Francisco
-FTX,25.0,2021-07-20,Hong Kong,"Sequoia Capital, Thoma Bravo, Softbank",no_inversor,2021-12-31,2021,Fintech
+FTX,25.0,2021-07-20,Hong Kong,Fintech,"Sequoia Capital, Thoma Bravo, Softbank",2021-12-31,2021,Hong Kong
 BYJU's,21.0,2017-07-25,India,Edtech,"Tencent Holdings, Lightspeed India Partners, Sequoia Capital India",2021-12-31,2021,Bengaluru
 Xiaohongshu,20.0,2016-03-31,China,E-commerce & direct-to-consumer,"GGV Capital, ZhenFund, Tencent",2021-12-31,2021,Shanghai
 J&T; Express,20.0,2021-04-07,Indonesia,"Supply chain, logistics, & delivery","Hillhouse Capital Management, Boyu Capital, Sequoia Capital China",2021-12-31,2021,Jakarta
@@ -2856,7 +2856,7 @@ Zego,1.1,2021-03-09,United Kingdom,Fintech,"LocalGlobe, Balderton Capital, Targe
 Rightway,1.1,2021-03-30,United States,Health,"Thrive Capital, Khosla Ventures, Tiger Global Management",2021-12-31,2021,New York
 Sunbit,1.1,2021-05-20,United States,Fintech,"Zeev Ventures, Group11, Chicago Ventures",2021-12-31,2021,Los Angeles
 Qingting FM,1.1,2021-06-02,China,Internet software & services,"China Culture Industrial Investment Fund, We Capital, China Minsheng Investment Group",2021-12-31,2021,Shanghai
-Amber Group,1.1,2021-06-21,Hong Kong,"Tiger Global Management, Tiger Brokers, DCM Ventures",no_inversor,2021-12-31,2021,Fintech
+Amber Group,1.1,2021-06-21,Hong Kong,Fintech,"Tiger Global Management, Tiger Brokers, DCM Ventures",2021-12-31,2021,Hong Kong
 G2,1.1,2021-06-22,United States,Internet software & services,"Pritzker Group Venture Capital, Accel, Hyde Park Venture Partners",2021-12-31,2021,Chicago
 Hailo,1.0,2021-06-23,Israel,Artificial intelligence,"Glory Ventures, Maniv Mobility",2021-12-31,2021,Tel Aviv
 People.ai,1.1,2021-08-11,United States,Internet software & services,"GGV Capital, Lightspeed Venture Partners, ICONIQ Capital",2021-12-31,2021,San Francisco
@@ -2917,7 +2917,7 @@ DianRong,1.0,2017-08-02,China,E-commerce & direct-to-consumer,"Standard Chartere
 Cell C,1.0,2017-08-07,South Africa,Mobile & telecommunications,"Blue Label Telecoms, Net1 UEPS Technologies",2021-12-31,2021,Midrand
 YH Global,1.0,2017-09-21,China,"Supply chain, logistics, & delivery","Co-Energy Finance, Grandland",2021-12-31,2021,Shenzhen
 Revolution Precrafted,1.0,2017-10-23,Philippines,Other,"K2 Global, 500 Startups",2021-12-31,2021,Manila
-WeLab,1.0,2017-11-08,Hong Kong,"Sequoia Capital China, ING, Alibaba Entrepreneurs Fund",no_inversor,2021-12-31,2021,Fintech
+WeLab,1.0,2017-11-08,Hong Kong,Fintech,"Sequoia Capital China, ING, Alibaba Entrepreneurs Fund",2021-12-31,2021,Hong Kong
 Maimai,1.0,2017-11-15,China,Mobile & telecommunications,"Morningside Venture Capital, IDG Capital, DCM Ventures",2021-12-31,2021,Beijing
 Dxy.cn,1.0,2018-04-10,China,Health,"Tencent Holdings, DCM Ventures",2021-12-31,2021,Hangzhou
 Orbbec Technology,1.0,2018-05-21,China,Hardware,"R-Z Capital, Green Pine Capital Partners, SAIF Partners China",2021-12-31,2021,Shenzhen
@@ -3024,7 +3024,7 @@ Amount,1.0,2021-05-17,United States,Fintech,"Invus Group, Hanaco Venture Capital
 Moglix,1.0,2021-05-17,Singapore,E-commerce & direct-to-consumer,no_inversor,2021-12-31,2021,Singapore
 Vise,1.0,2021-05-18,United States,Fintech,"Sequoia Capital, Founders Fund, Bling Capital",2021-12-31,2021,New York
 Printful,1.0,2021-05-24,United States,Other,Bregal Sagemount,2021-12-31,2021,Charlotte
-Matrixport,1.0,2021-06-01,Singapore,"Dragonfly Captial, Qiming Venture Partners, DST Global",no_inversor,2021-12-31,2021,Fintech
+Matrixport,1.0,2021-06-01,Singapore,Fintech,"Dragonfly Captial, Qiming Venture Partners, DST Global",2021-12-31,2021,no_data
 Shippo,1.0,2021-06-02,United States,"Supply chain, logistics, & delivery","Version One Ventures, Uncork Capital, Bessemer Venture Partners",2021-12-31,2021,San Francisco
 Thirty Madison,1.0,2021-06-02,United States,Health,"Northzone Ventures, Maveron, Johnson & Johnson Innovation",2021-12-31,2021,New York
 LetsGetChecked,1.0,2021-06-07,Ireland,Health,"Optum Ventures, Qiming Venture Partners, Transformation Capital",2021-12-31,2021,Dublin
@@ -3042,7 +3042,7 @@ ShipBob,1.0,2021-06-29,United States,"Supply chain, logistics, & delivery","Hyde
 Dream Games,1.0,2021-06-30,Turkey,Mobile & telecommunications,"Makers Fund, Index Ventures, Inova Ventures Participacees",2021-12-31,2021,Istanbul
 Grofers,1.01,2021-06-30,India,"Supply chain, logistics, & delivery","Tiger Global Management, Sequoia Capital India, SoftBank Group",2021-12-31,2021,Gurgaon
 Kitopi,1.0,2021-07-01,United Arab Emirates,"Supply chain, logistics, & delivery","CE-Ventures, BECO Capital, Nordstar",2021-12-31,2021,Dubai
-bolttech,1.0,2021-07-01,Singapore,"Mundi Ventures, Doqling Capital Partners, Activant Capital",no_inversor,2021-12-31,2021,Fintech
+bolttech,1.0,2021-07-01,Singapore,Fintech,"Mundi Ventures, Doqling Capital Partners, Activant Capital",2021-12-31,2021,Singapore
 MobileCoin,1.0,2021-07-07,United States,Fintech,"General Catalyst, Future Ventures, AU21",2021-12-31,2021,San Francisco
 Lunar,1.0,2021-07-12,Denmark,Fintech,"SEED Capital, Greyhound Capital, Socii Capital",2021-12-31,2021,Aarhus
 Amperity,1.0,2021-07-13,United States,Artificial intelligence,"Madrona Venture Group, Tiger Global Management, Madera Technology Partners",2021-12-31,2021,Seattle
@@ -3053,7 +3053,7 @@ Carson Group,1.0,2021-07-14,United States,Fintech,Bain Capital,2021-12-31,2021,L
 GO1,1.0,2021-07-19,Australia,Internet software & services,"Y Combinator, M12, SEEK",2021-12-31,2021,Brisbane
 Interos,1.0,2021-07-22,United States,Fintech,"Kleiner Perkins Caufield & Byers, NightDragon Security, Venrock",2021-12-31,2021,Arlington
 BlackBuck,1.0,2021-07-22,India,"Supply chain, logistics, & delivery","Accel, Sands Capital, International Finance Corporation",2021-12-31,2021,Bengaluru
-NIUM,1.0,2021-07-13,Singapore,"Vertex Ventures SE Asia, Global Founders Capital, Visa Ventures",no_inversor,2021-12-31,2021,Fintech
+NIUM,1.0,2021-07-13,Singapore,Fintech,"Vertex Ventures SE Asia, Global Founders Capital, Visa Ventures",2021-12-31,2021,Singapore
 Unico,1.0,2021-08-03,Brazil,Artificial intelligence,"Big Bets, General Atlantic, SOFTBANK Latin America Ventures",2021-12-31,2021,Sao Paulo
 Human Interest,1.0,2021-08-04,United States,Fintech,"Wing Venture Capital, Slow Ventures, Uncork Capital",2021-12-31,2021,San Francisco
 Bluecore,1.0,2021-08-05,United States,Artificial intelligence,"FirstMark Capital, Georgian Partners, Norwest Venture Partners",2021-12-31,2021,New York
