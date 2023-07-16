@@ -1,20 +1,20 @@
 {
-    "type": "FeatureCollection",
+    "type": "featureCollection",
     "features": [
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "United States"
-        },
+          "Country": "United States"
+        },  
         "geometry": {
           "type": "Point",
           "coordinates": [-95.7129, 37.0902]
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "China"
+          "Country": "China"
         },
         "geometry": {
           "type": "Point",
@@ -22,9 +22,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "India"
+          "Country": "India"
         },
         "geometry": {
           "type": "Point",
@@ -32,9 +32,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Sweden"
+          "Country": "Sweden"
         },
         "geometry": {
           "type": "Point",
@@ -42,9 +42,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "South Korea"
+          "Country": "South Korea"
         },
         "geometry": {
           "type": "Point",
@@ -52,9 +52,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Germany"
+          "Country": "Germany"
         },
         "geometry": {
           "type": "Point",
@@ -62,9 +62,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Luxembourg"
+          "Country": "Luxembourg"
         },
         "geometry": {
           "type": "Point",
@@ -72,9 +72,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "United Kingdom"
+          "Country": "United Kingdom"
         },
         "geometry": {
           "type": "Point",
@@ -82,9 +82,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Netherlands"
+          "Country": "Netherlands"
         },
         "geometry": {
           "type": "Point",
@@ -92,9 +92,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "France"
+          "Country": "France"
         },
         "geometry": {
           "type": "Point",
@@ -102,9 +102,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Israel"
+          "Country": "Israel"
         },
         "geometry": {
           "type": "Point",
@@ -112,9 +112,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Thailand"
+          "Country": "Thailand"
         },
         "geometry": {
           "type": "Point",
@@ -122,9 +122,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Canada"
+          "Country": "Canada"
         },
         "geometry": {
           "type": "Point",
@@ -132,9 +132,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Singapore"
+          "Country": "Singapore"
         },
         "geometry": {
           "type": "Point",
@@ -142,9 +142,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Czech Republic"
+          "Country": "Czech Republic"
         },
         "geometry": {
           "type": "Point",
@@ -152,9 +152,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Argentina"
+          "Country": "Argentina"
         },
         "geometry": {
           "type": "Point",
@@ -162,9 +162,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "South Africa"
+          "Country": "South Africa"
         },
         "geometry": {
           "type": "Point",
@@ -172,9 +172,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Indonesia"
+          "Country": "Indonesia"
         },
         "geometry": {
           "type": "Point",
@@ -182,9 +182,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Nigeria"
+          "Country": "Nigeria"
         },
         "geometry": {
           "type": "Point",
@@ -192,9 +192,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "United Arab Emirates"
+          "Country": "United Arab Emirates"
         },
         "geometry": {
           "type": "Point",
@@ -202,9 +202,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Switzerland"
+          "Country": "Switzerland"
         },
         "geometry": {
           "type": "Point",
@@ -212,9 +212,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Japan"
+          "Country": "Japan"
         },
         "geometry": {
           "type": "Point",
@@ -222,9 +222,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Malta"
+          "Country": "Malta"
         },
         "geometry": {
           "type": "Point",
@@ -232,9 +232,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Colombia"
+          "Country": "Colombia"
         },
         "geometry": {
           "type": "Point",
@@ -242,9 +242,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Brazil"
+          "Country": "Brazil"
         },
         "geometry": {
           "type": "Point",
@@ -252,9 +252,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Spain"
+          "Country": "Spain"
         },
         "geometry": {
           "type": "Point",
@@ -262,9 +262,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Australia"
+          "Country": "Australia"
         },
         "geometry": {
           "type": "Point",
@@ -272,9 +272,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Estonia"
+          "Country": "Estonia"
         },
         "geometry": {
           "type": "Point",
@@ -282,9 +282,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Portugal"
+          "Country": "Portugal"
         },
         "geometry": {
           "type": "Point",
@@ -292,9 +292,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Philippines"
+          "Country": "Philippines"
         },
         "geometry": {
           "type": "Point",
@@ -302,9 +302,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Hong Kong"
+          "Country": "Hong Kong"
         },
         "geometry": {
           "type": "Point",
@@ -312,9 +312,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Lithuania"
+          "Country": "Lithuania"
         },
         "geometry": {
           "type": "Point",
@@ -322,9 +322,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Ireland"
+          "Country": "Ireland"
         },
         "geometry": {
           "type": "Point",
@@ -332,9 +332,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Uruguay"
+          "Country": "Uruguay"
         },
         "geometry": {
           "type": "Point",
@@ -342,9 +342,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Mexico"
+          "Country": "Mexico"
         },
         "geometry": {
           "type": "Point",
@@ -352,9 +352,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Croatia"
+          "Country": "Croatia"
         },
         "geometry": {
           "type": "Point",
@@ -362,9 +362,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Turkey"
+          "Country": "Turkey"
         },
         "geometry": {
           "type": "Point",
@@ -372,9 +372,9 @@
         }
       },
       {
-        "type": "Feature",
+        "type": "feature",
         "properties": {
-          "name": "Belgium"
+          "Country": "Belgium"
         },
         "geometry": {
           "type": "Point",
