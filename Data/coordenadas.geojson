@@ -1,0 +1,386 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "United States"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-95.7129, 37.0902]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "China"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [104.1954, 35.8617]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "India"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [78.9629, 20.5937]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Sweden"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [18.6435, 60.1282]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "South Korea"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [127.7669, 35.9078]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Germany"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [10.4515, 51.1657]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Luxembourg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [6.1296, 49.8153]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "United Kingdom"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-3.4360, 55.3781]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Netherlands"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [5.2913, 52.1326]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "France"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [1.8883, 46.6034]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Israel"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [34.8516, 31.0461]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Thailand"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [100.9925, 15.8700]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Canada"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-106.3468, 56.1304]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Singapore"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [103.8198, 1.3521]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Czech Republic"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [15.4729, 49.8175]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Argentina"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-63.6167, -38.4161]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "South Africa"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [22.9375, -30.5595]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Indonesia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [113.9213, -0.7893]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Nigeria"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [8.6753, 9.0820]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "United Arab Emirates"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [53.8478, 23.4241]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Switzerland"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [8.2275, 46.8182]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Japan"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [138.2529, 36.2048]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Malta"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [14.3754, 35.9375]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Colombia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.2973, 4.5709]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Brazil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-51.9253, -14.2350]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Spain"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-3.7492, 40.4637]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Australia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [133.7751, -25.2744]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Estonia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [25.0136, 58.5953]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Portugal"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-8.2245, 39.3999]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Philippines"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [121.7740, 12.8797]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hong Kong"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [114.1694, 22.3193]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Lithuania"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [23.8813, 55.1694]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Ireland"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-7.6921, 53.1424]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Uruguay"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-55.7658, -32.5228]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mexico"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-102.5528, 23.6345]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Croatia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [15.2000, 45.1000]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Turkey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [35.2433, 38.9637]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Belgium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [3.4360, 55.3781]
+        }
+      }
+    ]
+  }
+  
