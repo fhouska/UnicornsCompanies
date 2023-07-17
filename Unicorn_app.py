@@ -70,7 +70,7 @@ st.markdown(
 
 # ------- DATA FRAME ---------------------------------------------------------------------------------------------------------------------------------------------#
 unicorns = pd.read_csv('Data/unicorns_final.csv')
-colors = ['#8ECCE6','#85BB89','#F6E691','#FDA7C0','#A977A8']
+colors = ['#8ECCE6','#85BB89','#F6E691','#FDA7C0','#A977A8','#7B1C79']
 
 
 # ------- Side Barr -----------------------------------------------------------------------------------------------------------------------------------------------#
@@ -162,7 +162,7 @@ if selected == 'Situación Actual':
         with open(archivo_html, 'r', encoding='utf-8') as f:
             contenido_html = f.read()
 
-        st.components.v1.html(contenido_html, width=1000, height=700)
+        st.components.v1.html(contenido_html, width=1300, height=800)
 
     with tab2:
 
@@ -212,6 +212,35 @@ if selected == 'Datos Históricos':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Datos Históricos</h2>", unsafe_allow_html=True)
     
     "aca va algo"
+    years = unicorns.groupby('Year')['Company'].count().reset_index()
+    custom_font = dict(family="Arial, sans-serif", size=12, color="black")
+    fig1 = px.area(years, x="Year", y="Company", 
+            template= "plotly_dark", 
+            color_discrete_sequence = [colors[5]]
+                )
+    fig1.update_layout(
+            title='Evolución de Epresas Unicornios',
+            xaxis=dict(title='Años',tickfont=custom_font),
+            yaxis=dict(title='Cantidad',tickfont=custom_font),
+            showlegend=False
+            )
+    st.plotly_chart(fig1)
+
+    top_10_2023 = unicorns[unicorns['Year']==2023].head(10)
+    top_10 = top_10_2023['Company'].unique()
+    data_top_10 = unicorns[unicorns['Company'].isin(top_10)]
+    fig2 = px.line(data_top_10, x="Year", y="Company", color='Company', 
+            color_discrete_sequence = colors,
+                )
+    fig2.update_layout(
+        title='Tiempo de Empresas en la lista',
+        xaxis=dict(title='Años'),
+        yaxis=dict(title=''),
+        showlegend=False,
+        )
+    st.plotly_chart(fig2)
+
+
 
 
 if selected == 'Probando Hipótesis':
