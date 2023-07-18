@@ -212,38 +212,47 @@ if selected == 'Datos Históricos':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Datos Históricos</h2>", unsafe_allow_html=True)
     
     "aca va algo"
-    years = unicorns.groupby('Year')['Company'].count().reset_index()
-    custom_font = dict(family="Arial, sans-serif", size=12, color="black")
-    fig1 = px.area(years, x="Year", y="Company", 
-            template= "plotly_dark", 
-            color_discrete_sequence = [colors[5]]
+
+    tab1, tab2 = st.tabs(["**Evolución en el tiempo**", "**Tablero de datos**"])
+    
+    with tab1:
+        years = unicorns.groupby('Year')['Company'].count().reset_index()
+        custom_font = dict(family="Arial, sans-serif", size=12, color="black")
+        fig1 = px.area(years, x="Year", y="Company", 
+                template= "plotly_dark", 
+                color_discrete_sequence = [colors[5]]
+                    )
+        fig1.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        fig1.update_layout(
+                title='Evolución de Epresas Unicornios',
+                xaxis=dict(title='Años',tickfont=custom_font),
+                yaxis=dict(title='Cantidad',tickfont=custom_font),
+                showlegend=False
                 )
-    fig1.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
-    fig1.update_layout(
-            title='Evolución de Epresas Unicornios',
+        st.plotly_chart(fig1,use_container_width=True)
+     
+
+        top_10_2023 = unicorns[unicorns['Year']==2023].head(10)
+        top_10 = top_10_2023['Company'].unique()
+        data_top_10 = unicorns[unicorns['Company'].isin(top_10)]
+        fig2 = px.line(data_top_10, x="Year", y="Company", color='Company', 
+                color_discrete_sequence = colors,
+                    )
+        fig2.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        
+        fig2.update_traces(line_shape='linear', line=dict(width=8))
+
+        fig2.update_layout(
+            title='Tiempo de Empresas en la lista',
             xaxis=dict(title='Años',tickfont=custom_font),
-            yaxis=dict(title='Cantidad',tickfont=custom_font),
-            showlegend=False
+            yaxis=dict(title='',tickfont=custom_font),
+            showlegend=False,
             )
-    st.plotly_chart(fig1)
+        st.plotly_chart(fig2,use_container_width=True)
+    
 
-    top_10_2023 = unicorns[unicorns['Year']==2023].head(10)
-    top_10 = top_10_2023['Company'].unique()
-    data_top_10 = unicorns[unicorns['Company'].isin(top_10)]
-    fig2 = px.line(data_top_10, x="Year", y="Company", color='Company', 
-            color_discrete_sequence = colors,
-                )
-    fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                            'paper_bgcolor': 'rgba(0, 0, 0, 0.0)'})
-
-    fig2.update_layout(
-        title='Tiempo de Empresas en la lista',
-        xaxis=dict(title='Años',tickfont=custom_font),
-        yaxis=dict(title='',tickfont=custom_font),
-        showlegend=False,
-        )
-    st.plotly_chart(fig2)
 
 
 
@@ -252,7 +261,7 @@ if selected == 'Probando Hipótesis':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Probando Hipótesis</h2>", unsafe_allow_html=True)
     
     """
-    Esta sección, de "Probando Hipótesis", se enfoca en realizar pruebas estadísticas. Se plantearon dos preguntas que han surgido durante la exploración y 
+    Esta sección se enfoca en realizar pruebas estadísticas. Se plantearon dos preguntas que han surgido durante la exploración y 
     el análisis de los datos.
 
     **1.**	¿Existe algún peso significativo en la valuación si la empresa pertenece a Estados Unidos en comparación con China?
@@ -294,8 +303,9 @@ if selected == 'Probando Hipótesis':
                             bargap=0.1,
                             showlegend=True 
                             )
-        fig4.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig4.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        
         fig4.update_layout(width=400, height=350)
         st.plotly_chart(fig4,use_container_width=True)
     with col2:
@@ -316,8 +326,8 @@ if selected == 'Probando Hipótesis':
                             bargap=0.1,
                             showlegend=True 
                             )
-        fig5.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig5.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
         fig5.update_layout(width=400, height=350)
         st.plotly_chart(fig5,use_container_width=True)
 
@@ -325,7 +335,8 @@ if selected == 'Probando Hipótesis':
     """
     **Conclusión**: 
 
-    Según el test Shapiro-Wilk las valuaciones en ambos países no siguen una distribución normal.
+    Según el test Shapiro-Wilk y las gráficas podemos ver que las valuaciones en ambos países no siguen una distribución normal.
+    
     Dado que el p-valor de Mann-Whitney-U es menor que 0.05 **se rechaza la hipótesis nula** y se puede afirmar que hay una diferencia significativa en la valuación de 
     las empresas unicornios entre ambos países.     
     """
@@ -356,8 +367,8 @@ if selected == 'Probando Hipótesis':
                         bargap=0.1,
                         showlegend=True,
                         )
-        fig6.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig6.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.5)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.5)'})
         fig6.update_layout(width=400, height=350)
         st.plotly_chart(fig6,use_container_width=True)
 
@@ -378,8 +389,8 @@ if selected == 'Probando Hipótesis':
                         bargap=0.1,
                         showlegend=True 
                         )
-        fig7.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
-                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig7.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.5)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.5)'})
         fig7.update_layout(width=400, height=350)
         st.plotly_chart(fig7,use_container_width=True)
 
@@ -387,7 +398,8 @@ if selected == 'Probando Hipótesis':
     """
     **Conclusión**:
 
-    Según el test Shapiro-Wilk las valuaciones en ambas muestras no sigue una distribución normal.
+    Según el test Shapiro-Wilk y las gráficas podemos ver que las valuaciones en ambas muestras no sigue una distribución normal.
+
     Dado que el p-valor de Mann-Whitney-U es mayor que 0.05 **no se puede rechazar la hipótesis nula** y no se puede afirmar que hay una diferencia significativa entre 
     la valuación de las empresas entre el año 2020 y el resto de los años.
 
