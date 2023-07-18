@@ -218,6 +218,8 @@ if selected == 'Datos Históricos':
             template= "plotly_dark", 
             color_discrete_sequence = [colors[5]]
                 )
+    fig1.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
     fig1.update_layout(
             title='Evolución de Epresas Unicornios',
             xaxis=dict(title='Años',tickfont=custom_font),
@@ -232,10 +234,13 @@ if selected == 'Datos Históricos':
     fig2 = px.line(data_top_10, x="Year", y="Company", color='Company', 
             color_discrete_sequence = colors,
                 )
+    fig2.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                            'paper_bgcolor': 'rgba(0, 0, 0, 0.0)'})
+
     fig2.update_layout(
         title='Tiempo de Empresas en la lista',
-        xaxis=dict(title='Años'),
-        yaxis=dict(title=''),
+        xaxis=dict(title='Años',tickfont=custom_font),
+        yaxis=dict(title='',tickfont=custom_font),
         showlegend=False,
         )
     st.plotly_chart(fig2)
@@ -246,7 +251,153 @@ if selected == 'Datos Históricos':
 if selected == 'Probando Hipótesis':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Probando Hipótesis</h2>", unsafe_allow_html=True)
     
-    "aca va algo"
+    """
+    Esta sección, de "Probando Hipótesis", se enfoca en realizar pruebas estadísticas. Se plantearon dos preguntas que han surgido durante la exploración y 
+    el análisis de los datos.
+
+    **1.**	¿Existe algún peso significativo en la valuación si la empresa pertenece a Estados Unidos en comparación con China?
+
+    **2.**	Teniendo en cuenta el año 2020 fue el año de la pandemia ¿Existe algún peso significativo en la valuación si la empresa entró a la lista en ese año?
+
+    Para responder a estas preguntas, se utilizaron dos tipos de pruebas estadísticas: el test de Shapiro-Wilk y el test de Mann-Whitney-U.
+
+    * **Mann-Whitney-U**: se utilizó para comparar las medias de dos grupos independientes, en este caso, las empresas unicornios en Estados Unidos y China, y 
+    aquellas empresas que entraron a la lista en el año 2020 y las demás. 
+    * **Shapiro-Wilk**: se empleó para determinar si las variables tienen una distribución normal o no. Esto es importante para poder utilizar el test *Mann-Whitney-U* 
+    ya que es un tipo de test no paramétrico.
+    Para ambos test se utilizó un nivel de **significancia** de **0.05**, lo que implica que si el p-valor obtenido es menor que 0.05, se rechaza la hipótesis nula.
+    """
+    st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Primer A/B Testing</h3>", unsafe_allow_html=True)
+    """
+    *Hipótesis nula:* = No existe diferencia significativa en la valuación de las empresas unicornios si pertenecen a Estados Unidos y China.
+    * Shapiro-Wilk para la valuación de empresas unicornios en Estados Unidos: **p-valores = 0.00**.
+    * Shapiro-Wilk para la valuación de empresas unicornios en China: **p-valores = 0.00**.
+    * Mann-Whitney-U es de **5.457875322956404e-06**.
+    """
+    col1, col2 = st.columns(2)
+    custom_font = dict(family="Arial, sans-serif", size=12, color="black")
+    with col1:
+        df_valuation = unicorns[unicorns['Country'].isin(['United States', 'China'])]
+        # Estados Unidos
+        fig4 = px.histogram(
+            df_valuation[df_valuation['Country'] == 'United States'],
+            x="Valuation ($B)",
+            nbins=20,
+            log_y=True,
+            color_discrete_sequence = [colors[0]],
+            template="plotly_dark"
+            )
+        fig4.update_layout(
+                            title='Distribución de Valuación en Estados Unidos',
+                            xaxis=dict(title='Valuación',tickfont=custom_font),
+                            yaxis=dict(title=' '),
+                            bargap=0.1,
+                            showlegend=True 
+                            )
+        fig4.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig4.update_layout(width=400, height=350)
+        st.plotly_chart(fig4,use_container_width=True)
+    with col2:
+        # China
+        fig5 = px.histogram(
+            df_valuation[df_valuation['Country'] == 'China'],
+            x="Valuation ($B)",
+            nbins=20,
+            log_y=True,
+            color_discrete_sequence = [colors[1]],
+            template="plotly_dark"
+        )
+
+        fig5.update_layout(
+                            title='Distribución de Valuación en China',
+                            xaxis=dict(title='Valuación',tickfont=custom_font),
+                            yaxis=dict(title=' '),
+                            bargap=0.1,
+                            showlegend=True 
+                            )
+        fig5.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig5.update_layout(width=400, height=350)
+        st.plotly_chart(fig5,use_container_width=True)
+
+    
+    """
+    **Conclusión**: 
+
+    Según el test Shapiro-Wilk las valuaciones en ambos países no siguen una distribución normal.
+    Dado que el p-valor de Mann-Whitney-U es menor que 0.05 **se rechaza la hipótesis nula** y se puede afirmar que hay una diferencia significativa en la valuación de 
+    las empresas unicornios entre ambos países.     
+    """
+    st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Segundo A/B Testing</h3>", unsafe_allow_html=True)
+
+    """
+    *Hipótesis nula:* No existe diferencia significativa en la valuación de las empresas unicornios si pertenecen al 2020 o el resto de los años.
+    * Shapiro-Wilk para la valuación de empresas unicornios en el año 2020: **p-valores = 1.634614658634899e-41**.
+    * Shapiro-Wilk para la valuación de empresas unicornios en el resto de los años: **p-valores = 0.00**.
+    * Mann-Whitney-U es de **0.44621711860946967**.
+    """
+    col1, col2 = st.columns(2)
+    with col1:
+        df_valuation = unicorns.copy()
+    # Año 2020
+        fig6 = px.histogram(
+        df_valuation[df_valuation['Year'] == 2020],
+        x="Valuation ($B)",
+        nbins=20,
+        log_y=True,
+        color_discrete_sequence = [colors[0]],
+        template="plotly_dark"
+        )
+        fig6.update_layout(
+                        title='Distribución de Valuación en el año 2020',
+                        xaxis=dict(title='Valuación',tickfont=custom_font),
+                        yaxis=dict(title=''),
+                        bargap=0.1,
+                        showlegend=True,
+                        )
+        fig6.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig6.update_layout(width=400, height=350)
+        st.plotly_chart(fig6,use_container_width=True)
+
+    with col2:
+        # Resto de los años
+        fig7 = px.histogram(
+        df_valuation[df_valuation['Year'] != 2020],
+        x="Valuation ($B)",
+        nbins=20,
+        log_y=True,
+        color_discrete_sequence = [colors[1]],
+        template="plotly_dark"
+        )
+        fig7.update_layout(
+                        title='Distribución de Valuación en el año 2020',
+                        xaxis=dict(title='Valuación',tickfont=custom_font),
+                        yaxis=dict(title=''),
+                        bargap=0.1,
+                        showlegend=True 
+                        )
+        fig7.update_layout({'plot_bgcolor': 'rgba(0, 0, 0, 0)',
+                            'paper_bgcolor': 'rgba(0, 0, 0, 0)'})
+        fig7.update_layout(width=400, height=350)
+        st.plotly_chart(fig7,use_container_width=True)
+
+
+    """
+    **Conclusión**:
+
+    Según el test Shapiro-Wilk las valuaciones en ambas muestras no sigue una distribución normal.
+    Dado que el p-valor de Mann-Whitney-U es mayor que 0.05 **no se puede rechazar la hipótesis nula** y no se puede afirmar que hay una diferencia significativa entre 
+    la valuación de las empresas entre el año 2020 y el resto de los años.
+
+    """
+
+
+
+
+
+
 
 if selected == 'Machine Learning':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Machine Learning</h2>", unsafe_allow_html=True)
