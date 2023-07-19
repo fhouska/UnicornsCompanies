@@ -85,7 +85,7 @@ st.sidebar.title (' ')
 
 
 # ------- CONTENIDO -----------------------------------------------------------------------------------------------------------------------------------------------#
-################----INTRODUCCION---################ 
+ 
 if selected == 'Introducción':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Introducción</h2>", unsafe_allow_html=True)
     
@@ -143,18 +143,36 @@ if selected == 'Situación Actual':
     * un tablero de visualización. 
     """
 
-    tab1, tab2 = st.tabs(["**Distribución de empresas unicornios**", "**Tablero de datos**"])
+    tab1, tab2, tab3, tab4 = st.tabs(["**Mapa Distribución**", "**Tablero de Datos**",'**Evolución**','**Industrias**'])
 
     with tab1:
         st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Distribución de empresas unicornios</h3>", unsafe_allow_html=True)
-        """
-        A continuación, presentamos un mapa que muestra la distribución de empresas unicornio por países. 
-        
-        Podemos observar que Estados Unidos lidera en cantidad de 
-        empresas unicornio, con un total de 656, seguido de China con 171 empresas. Esta información nos brinda una perspectiva clara de los países con mayor
-        concentración de empresas unicornio en el mundo.
-        """
-        
+
+        # col1, col2 = st.columns(2)
+        # with col1:
+        st.write("""
+                     
+            A continuación, presentamos un mapa que muestra la distribución de empresas unicornio por países. 
+            
+            Podemos observar que Estados Unidos lidera en cantidad de 
+            empresas unicornio, con un total de 656, seguido de China con 171 empresas. Esta información nos brinda una perspectiva clara de los países con mayor
+            concentración de empresas unicornio en el mundo.
+            """)
+        # with col2:
+        #     datos2023 = unicorns[unicorns['Year']==2023]
+        #     count_continent = datos2023.groupby(['Continent'])['Company'].count().reset_index()
+        #     fig = px.pie(count_continent, values='Company', names='Continent', 
+        #         template="plotly_dark", 
+        #         color_discrete_sequence = colors,
+        #         height=400,
+        #         title="Empresas Unicornio por Continente en 2023")
+            
+        #     fig.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+        #                 'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+            
+        #     st.plotly_chart(fig,use_container_width=True)
+
+
         # Ruta al archivo HTML
         archivo_html = "Data/mapa.html"
         
@@ -164,8 +182,8 @@ if selected == 'Situación Actual':
 
         st.components.v1.html(contenido_html, width=1300, height=800)
 
-    with tab2:
 
+    with tab2:
         # TABLERO POWER BI
         st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Tablero de datos</h3>", unsafe_allow_html=True)
         """
@@ -206,16 +224,9 @@ if selected == 'Situación Actual':
         18% del total de empresas unicornio. Estas dos categorías en conjunto representan casi la mitad de todas las empresas unicornio.
 
         """
+    with tab3:
+        st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Evolución</h3>", unsafe_allow_html=True)
 
-
-if selected == 'Datos Históricos':
-    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Datos Históricos</h2>", unsafe_allow_html=True)
-    
-    "aca va algo"
-
-    tab1, tab2 = st.tabs(["**Evolución en el tiempo**", "**Tablero de datos**"])
-    
-    with tab1:
         years = unicorns.groupby('Year')['Company'].count().reset_index()
         custom_font = dict(family="Arial, sans-serif", size=12, color="black")
         fig1 = px.area(years, x="Year", y="Company", 
@@ -251,9 +262,86 @@ if selected == 'Datos Históricos':
             showlegend=False,
             )
         st.plotly_chart(fig2,use_container_width=True)
+
+    with tab4:
+        st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Industrias</h3>", unsafe_allow_html=True)
+        
+        # Variable a Graficar:
+        Industry_type  = unicorns.groupby(['Industry_new','Year'])['Company'].count().reset_index()
+        Industry_type = Industry_type.sort_values(by='Company', ascending=True)
+
+        fig3 = px.bar(Industry_type[Industry_type['Year']==2023], y='Industry_new', x='Company',
+        orientation='h', 
+        template= "plotly_dark",
+        color_discrete_sequence = [colors[3]],
+        height=400    
+        )
+        fig3.update_layout(
+        title='Distribución de Industrias',
+        xaxis=dict(title='Cantidades'),
+        yaxis=dict(title=' '),
+        showlegend=False
+        )
+        fig3.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        
+        st.plotly_chart(fig3,use_container_width=True)
+
+
+
+        fig4 = px.area(Industry_type, x="Year", y="Company", color="Industry_new", 
+            title='Población por Continentes',
+            color_discrete_sequence = colors,
+            template="plotly_dark")
+        fig4.update_layout(
+        title='Evolución de Industrias a lo Largo de los Años',
+        xaxis=dict(title='Cantidades'),
+        yaxis=dict(title=' '),
+        showlegend=True
+        )
+        fig4.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        
+        st.plotly_chart(fig4,use_container_width=True)
+
+        # Variable a Graficar:
+        valuations = unicorns.groupby(['Industry:','Year'])['Valuation ($B)'].sum().reset_index()
+        valuations = valuations.sort_values(by='Valuation ($B)',ascending = False)
+
+        fig5 = px.box(valuations, x='Industry:', y='Valuation ($B)',
+             template="plotly_dark",
+             color_discrete_sequence = colors
+             )
+        fig5.update_layout(
+        title='Distribución de Valuaciones de Empresas Unicornio por Industria',
+        xaxis=dict(title='Valuación'),
+        yaxis=dict(title=' '),
+        showlegend=False
+        )
+        fig5.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        
+        st.plotly_chart(fig5,use_container_width=True)
+
+
+
+
+
+
+
+
+
+
+
+if selected == 'Datos Históricos':
+    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Datos Históricos</h2>", unsafe_allow_html=True)
     
+    "aca va algo"
 
-
+    tab3, tab4 = st.tabs(["**E**", "**T**"])
+    
+    
+    
 
 
 
@@ -404,11 +492,6 @@ if selected == 'Probando Hipótesis':
     la valuación de las empresas entre el año 2020 y el resto de los años.
 
     """
-
-
-
-
-
 
 
 if selected == 'Machine Learning':
