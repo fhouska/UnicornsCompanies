@@ -20,6 +20,9 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
+# Modelo
+from pycaret.regression import load_model, predict_model
+
 
 # ------- CONFIGURACION DE LA PAGINA---------------------------------------#
 st.set_page_config(page_title="Empresas unicornios",page_icon="🦄",layout= 'wide')
@@ -77,8 +80,8 @@ colors = ['#8ECCE6','#85BB89','#F6E691','#FDA7C0','#A977A8','#7B1C79']
 with st.sidebar:
     selected = option_menu(
         menu_title= None,
-        options= ['Introducción','Situación Actual','Datos Históricos','Probando Hipótesis','Machine Learning','Conclusión'],
-        icons= ["house", "bar-chart", "bar-chart-fill", "clipboard2-check", "wrench","card-checklist"],
+        options= ['Introducción','Análisis Exploratorio','Probando Hipótesis','Machine Learning','Conclusión'],
+        icons= ["house", "bar-chart", "clipboard2-check", "wrench","card-checklist"],
         )
     
 st.sidebar.title (' ')
@@ -135,7 +138,7 @@ if selected == 'Introducción':
     st.write(unicorns.head(10),width=0.7)
 
 
-if selected == 'Situación Actual':
+if selected == 'Análisis Exploratorio':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Situación Actual</h2>", unsafe_allow_html=True)
     """
     Para analizar la composición de las empresas unicornio en el presente, se utilizaron dos enfoques: 
@@ -226,7 +229,15 @@ if selected == 'Situación Actual':
         """
     with tab3:
         st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Evolución</h3>", unsafe_allow_html=True)
+        """
+        Las empresas unicornio han experimentado un crecimiento significativo a lo largo de los años. Se puede observar una gran diferencia en el año 2020, donde el 
+        número de empresas unicornio pasó de 513 a 957 en el año 2021, lo que representa un incremento significativo en un solo año.
+        
+        Sin embargo, al analizar las empresas que se encuentran en el top 10 en cuanto a valuación, se puede notar que la mayoría de ellas ya existían antes del año 
+        2020. Solo 3 de las empresas que forman parte del top 10 ingresaron después del año 2020. Esto sugiere que las empresas que han logrado alcanzar una alta 
+        valuación han sido establecidas previamente y han logrado un crecimiento sostenido en el tiempo.
 
+        """
         years = unicorns.groupby('Year')['Company'].count().reset_index()
         custom_font = dict(family="Arial, sans-serif", size=12, color="black")
         fig1 = px.area(years, x="Year", y="Company", 
@@ -239,8 +250,9 @@ if selected == 'Situación Actual':
                 title='Evolución de Epresas Unicornios',
                 xaxis=dict(title='Años',tickfont=custom_font),
                 yaxis=dict(title='Cantidad',tickfont=custom_font),
-                showlegend=False
+                showlegend=False,
                 )
+        fig1.update_layout(height=300)
         st.plotly_chart(fig1,use_container_width=True)
      
 
@@ -256,11 +268,12 @@ if selected == 'Situación Actual':
         fig2.update_traces(line_shape='linear', line=dict(width=8))
 
         fig2.update_layout(
-            title='Tiempo de Empresas en la lista',
+            title='Tiempo de Empresas top 10',
             xaxis=dict(title='Años',tickfont=custom_font),
             yaxis=dict(title='',tickfont=custom_font),
             showlegend=False,
             )
+        fig2.update_layout(height=300)
         st.plotly_chart(fig2,use_container_width=True)
 
     with tab4:
@@ -270,22 +283,22 @@ if selected == 'Situación Actual':
         Industry_type  = unicorns.groupby(['Industry_new','Year'])['Company'].count().reset_index()
         Industry_type = Industry_type.sort_values(by='Company', ascending=True)
 
-        fig3 = px.bar(Industry_type[Industry_type['Year']==2023], y='Industry_new', x='Company',
-        orientation='h', 
-        template= "plotly_dark",
-        color_discrete_sequence = [colors[3]],
-        height=400    
-        )
-        fig3.update_layout(
-        title='Distribución de Industrias',
-        xaxis=dict(title='Cantidades'),
-        yaxis=dict(title=' '),
-        showlegend=False
-        )
-        fig3.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
-                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
-        
-        st.plotly_chart(fig3,use_container_width=True)
+        # fig3 = px.bar(Industry_type[Industry_type['Year']==2023], y='Industry_new', x='Company',
+        # orientation='h', 
+        # template= "plotly_dark",
+        # color_discrete_sequence = [colors[3]],
+        # height=400    
+        # )
+        # fig3.update_layout(
+        # title='Distribución de Industrias',
+        # xaxis=dict(title='Cantidades'),
+        # yaxis=dict(title=' '),
+        # showlegend=False
+        # )
+        # fig3.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+        #                 'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        # fig3.update_layout(height=300)
+        # st.plotly_chart(fig3,use_container_width=True)
 
 
 
@@ -301,7 +314,7 @@ if selected == 'Situación Actual':
         )
         fig4.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
                         'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
-        
+        fig4.update_layout(height=350)
         st.plotly_chart(fig4,use_container_width=True)
 
         # Variable a Graficar:
@@ -320,26 +333,10 @@ if selected == 'Situación Actual':
         )
         fig5.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
                         'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
-        
+        fig5.update_layout(height=350)
         st.plotly_chart(fig5,use_container_width=True)
 
-
-
-
-
-
-
-
-
-
-
-if selected == 'Datos Históricos':
-    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Datos Históricos</h2>", unsafe_allow_html=True)
-    
-    "aca va algo"
-
-    tab3, tab4 = st.tabs(["**E**", "**T**"])
-    
+ 
     
     
 
@@ -497,7 +494,62 @@ if selected == 'Probando Hipótesis':
 if selected == 'Machine Learning':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Machine Learning</h2>", unsafe_allow_html=True)
     
-    "aca va algo"
+    model = load_model('Data/ml_unicornios')
+
+    st.title('Predicción de Valuación en Inversiones')
+
+
+    Funding = st.slider('Inversión', min_value=1, max_value=300, value=10)
+
+    Country = st.selectbox('País', options=['China', 'United States', 'Sweden', 'Australia', 'United Kingdom',
+       'Bahamas', 'India', 'Indonesia', 'Turkey', 'Estonia', 'Germany',
+       'Hong Kong', 'South Korea', 'Mexico', 'Canada', 'Netherlands',
+       'France', 'Finland', 'Israel', 'Lithuania', 'Denmark', 'Belgium',
+       'Colombia', 'Brazil', 'Singapore', 'Austria', 'Ireland',
+       'United Arab Emirates', 'Switzerland', 'Vietnam', 'South Africa',
+       'Thailand', 'Norway', 'Chile', 'Argentina', 'Bermuda', 'Japan',
+       'Spain', 'Malaysia', 'Senegal', 'Philippines', 'Luxembourg',
+       'Nigeria', 'Czech Republic', 'Croatia', 'Italy'])
+
+    Industry = st.selectbox('Industria', options=['Artificial intelligence', 'Other',
+       'E-commerce & direct-to-consumer', 'Fintech',
+       'Internet software & services',
+       'Supply chain, logistics, & delivery', 'Consumer & retail',
+       'Data management & analytics', 'Edtech', 'Health', 'Hardware',
+       'Auto & transportation', 'Travel', 'Cybersecurity',
+       'Mobile & telecommunications', 'Artificial Intelligence'])
+
+    Year_Founded = st.slider('Año', min_value=2002, max_value=2023, value=1)
+
+    Years_Since_Founded = 2023 - Year_Founded
+    Industry_Country = Industry  + Country
+    Funding_Age_Ratio = Funding / Years_Since_Founded
+    Industry_Funding = Industry + str(Funding)
+
+    input_data = pd.DataFrame([[
+        
+        Funding, Industry, Country, Year_Founded, Years_Since_Founded, Industry_Country, Funding_Age_Ratio,Industry_Funding,
+        
+    ]], columns=['Industry', 'Country', 'Year_Founded', 'Funding','Years_Since_Founded', 'Industry_Country', 'Funding_Age_Ratio','Industry_Funding'])
+
+    if st.button('¡Descubre el precio!'):
+
+        prediction = predict_model(model, data=input_data)
+        prediction_value = prediction["Valuation"].values[0].round(2)
+
+        st.write(str(prediction_value) + ' euros')
+        ROI = prediction['Valuation'].values[0] - Funding
+        st.write('ROI: ' + str(ROI))
+
+
+
+
+
+
+
+
+
+
 
 if selected == 'Conclusión':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Conclusión</h2>", unsafe_allow_html=True)
