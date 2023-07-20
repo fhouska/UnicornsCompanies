@@ -94,11 +94,14 @@ if selected == 'Introducción':
     
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Por qué elegir analizar las empresas unicornios?</h3>", unsafe_allow_html=True)
     """
-    Seleccioné este tema debido a mi curiosidad y la relevancia que tienen las empresas unicornio en el mundo empresarial y tecnológico actual. Las empresas unicornio 
-    son reconocidas por su capacidad para innovar y liderar en el ámbito tecnológico. 
+    La curiosidad y la relevancia que tienen las empresas unicornio en el mundo empresarial y tecnológico actual fueron los motores que inspiraron la realización de 
+    este trabajo. Las empresas unicornio son reconocidas por su capacidad para innovar y liderar en el ámbito tecnológico.
 
-    A través de este análisis, mi objetivo es identificar y explorar estas empresas, comprender en qué áreas específicas operan y determinar qué países presentan una 
-    mayor concentración de estas organizaciones.
+    A través de este análisis, se pretende contestar:
+    * **¿En qué áreas específicas operan?**
+    * **¿Qué países presentan una mayor concentración de este tipo de empresas?**
+    * **¿Cómo han evolucionado en el tiempo?**
+
     """
 
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Qué es una empresa unicornio?</h3>", unsafe_allow_html=True)
@@ -129,21 +132,41 @@ if selected == 'Introducción':
     link_2023 = "[2023 - Cb Insights](https://www.cbinsights.com/research-unicorn-companies)"
     st.markdown(link_2023, unsafe_allow_html=True)
 
-    st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Dataset Final:</h3>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-ana: center; color: #7B1C79;'>Otros datos utilizados:</h4>", unsafe_allow_html=True)
+       
+    """
+    Imagen de fondo: **Freepik**"""
+    link_Freepik = "[Link_Freepik](http://www.freepik.com)" 
+    st.markdown(link_Freepik, unsafe_allow_html=True)
+    
+    """ Geojson: se extrajo de la web **Data Hub** un geojosn para realizar un mapa de distribución.""" 
+    link_Data_Hub = "[Link_Data_Hub](https://datahub.io/core/geo-countries#data)" 
+    st.markdown(link_Data_Hub, unsafe_allow_html=True)
+
+    """
+    Modelo Predictivo: utilizamos otro dataset con mas información tambien de **Kaggle**
+    """
+    link_Modelo = "[Modelo - Kaggle](https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset)" 
+    st.markdown(link_Modelo, unsafe_allow_html=True)
+
+
+    st.markdown("<h4 style='text-ana: center; color: #7B1C79;'>Dataset Final:</h4>", unsafe_allow_html=True)
     """
     Luego de procesar nuesto los datos obtenemos el siguiente dataset:
 
     (Primeras 10 filas)
     """
-    st.write(unicorns.head(10),width=0.7)
-
+    st.write(unicorns.head(10),hight = 100, width=200)
 
 if selected == 'Análisis Exploratorio':
-    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Situación Actual</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Análisis Exploratorio</h2>", unsafe_allow_html=True)
     """
-    Para analizar la composición de las empresas unicornio en el presente, se utilizaron dos enfoques: 
-    * un mapa de distribución y 
-    * un tablero de visualización. 
+    En esta investigación, se han empleado cuatro enfoques clave para examinar la composición de las empresas unicornio: 
+
+    * Mapa de distribución geográfica a Mayo 2023.
+    * Tablero de visualización dinámico.
+    * Análisis de la evolución en el tiempo.
+    * Exploración de las industrias. 
     """
 
     tab1, tab2, tab3, tab4 = st.tabs(["**Mapa Distribución**", "**Tablero de Datos**",'**Evolución**','**Industrias**'])
@@ -278,29 +301,20 @@ if selected == 'Análisis Exploratorio':
 
     with tab4:
         st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Industrias</h3>", unsafe_allow_html=True)
+        """
+        El gráfico representa la evolución de las empresas en función de la industria a lo largo del tiempo. 
         
+        Para poder ver estos resultados, se realizaron algunas 
+        reclasificaciones dado que eran diferentes datasets, y se encontraron empresas con diferentes industrias. Lo que se optó fue tomar la última 
+        clasificación del 2023 y, para aquellas empresas que ya no están, se las incluyó en el concepto "Otros".
+
+        Teniendo en cuenta lo anterior, se destaca el crecimiento de la industria "Tecnología Financiera" (Finance Technology), seguida de cerca por 
+        "Salud y Bienestar" (Health & Wellness).
+        """
+
         # Variable a Graficar:
         Industry_type  = unicorns.groupby(['Industry_new','Year'])['Company'].count().reset_index()
         Industry_type = Industry_type.sort_values(by='Company', ascending=True)
-
-        # fig3 = px.bar(Industry_type[Industry_type['Year']==2023], y='Industry_new', x='Company',
-        # orientation='h', 
-        # template= "plotly_dark",
-        # color_discrete_sequence = [colors[3]],
-        # height=400    
-        # )
-        # fig3.update_layout(
-        # title='Distribución de Industrias',
-        # xaxis=dict(title='Cantidades'),
-        # yaxis=dict(title=' '),
-        # showlegend=False
-        # )
-        # fig3.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
-        #                 'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
-        # fig3.update_layout(height=300)
-        # st.plotly_chart(fig3,use_container_width=True)
-
-
 
         fig4 = px.area(Industry_type, x="Year", y="Company", color="Industry_new", 
             title='Población por Continentes',
@@ -316,6 +330,12 @@ if selected == 'Análisis Exploratorio':
                         'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
         fig4.update_layout(height=350)
         st.plotly_chart(fig4,use_container_width=True)
+
+        """
+        Este gráfico de Distribución de las valuaciones de las industrias muestra el valor de las empresas a lo largo del período. 
+        Se puede observar que las empresas de mayor valuación son aquellas que pertenecen a la industria de "Internet, Software y Servicios" 
+        (Internet software & services).
+        """
 
         # Variable a Graficar:
         valuations = unicorns.groupby(['Industry:','Year'])['Valuation ($B)'].sum().reset_index()
@@ -492,16 +512,23 @@ if selected == 'Probando Hipótesis':
 
 
 if selected == 'Machine Learning':
-    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Machine Learning</h2>", unsafe_allow_html=True)
-    
+    st.markdown("<h1 style='text-ana: center; color: #7B1C79;'>Machine Learning</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Predicción de Valuación en Inversiones</h3>", unsafe_allow_html=True)
+       
     model = load_model('Data/ml_unicornios')
+    """
+    Realizamos un modelo predictivo de **regresión lineal** para predecir el **valor de la inversión** en función de las siguientes variables: Inversión, 
+    País, Continente, Industria, Año en que se fundó la empresa, el porcentaje de rentabilidad que se quiere sobre la inversión.
 
-    st.title('Predicción de Valuación en Inversiones')
+    En la implementación de este modelo, utilizamos la biblioteca **pycaret**.
 
+    """
+    
+    st.write("<h4 style='text-ana: center; color: #7B1C79;'>¡Experimenta como inversionista y pruébalo!</h4>", unsafe_allow_html=True)
 
-    Funding = st.slider('Inversión', min_value=1, max_value=300, value=10)
+    Funding = st.slider('**Inversión en dólares**', min_value=1, max_value=300, value=10, key='slider', help="valor en millones")
 
-    Country = st.selectbox('País', options=['China', 'United States', 'Sweden', 'Australia', 'United Kingdom',
+    Country = st.selectbox('**País**', options=['China', 'United States', 'Sweden', 'Australia', 'United Kingdom',
        'Bahamas', 'India', 'Indonesia', 'Turkey', 'Estonia', 'Germany',
        'Hong Kong', 'South Korea', 'Mexico', 'Canada', 'Netherlands',
        'France', 'Finland', 'Israel', 'Lithuania', 'Denmark', 'Belgium',
@@ -510,8 +537,10 @@ if selected == 'Machine Learning':
        'Thailand', 'Norway', 'Chile', 'Argentina', 'Bermuda', 'Japan',
        'Spain', 'Malaysia', 'Senegal', 'Philippines', 'Luxembourg',
        'Nigeria', 'Czech Republic', 'Croatia', 'Italy'])
+    
+    Continent = st.selectbox('**Continente**', options= ['Asia', 'North America', 'Europe', 'Oceania', 'South America', 'Africa'])
 
-    Industry = st.selectbox('Industria', options=['Artificial intelligence', 'Other',
+    Industry = st.selectbox('**Industria**', options=['Artificial intelligence', 'Other',
        'E-commerce & direct-to-consumer', 'Fintech',
        'Internet software & services',
        'Supply chain, logistics, & delivery', 'Consumer & retail',
@@ -519,42 +548,61 @@ if selected == 'Machine Learning':
        'Auto & transportation', 'Travel', 'Cybersecurity',
        'Mobile & telecommunications', 'Artificial Intelligence'])
 
-    Year_Founded = st.slider('Año', min_value=2002, max_value=2023, value=1)
+    Year_Founded = st.slider('**Año en que la empresa se fundó**', min_value=2002, max_value=2023, value=2010)
 
     Years_Since_Founded = 2023 - Year_Founded
-    Industry_Country = Industry  + Country
+    
     Funding_Age_Ratio = Funding / Years_Since_Founded
-    Industry_Funding = Industry + str(Funding)
+    
+    ROI = ((st.slider('**% Rentabilidad**', min_value=1, max_value=100, value=10)/100)+1)* int(Funding)
 
     input_data = pd.DataFrame([[
         
-        Funding, Industry, Country, Year_Founded, Years_Since_Founded, Industry_Country, Funding_Age_Ratio,Industry_Funding,
+        Funding, Country, Continent, Industry , Year_Founded, Years_Since_Founded, Funding_Age_Ratio ,ROI
         
-    ]], columns=['Industry', 'Country', 'Year_Founded', 'Funding','Years_Since_Founded', 'Industry_Country', 'Funding_Age_Ratio','Industry_Funding'])
+    ]], columns=['Funding','Country','Continent','Industry', 'Year_Founded','Years_Since_Founded', 'Funding_Age_Ratio','ROI'])
 
-    if st.button('¡Descubre el precio!'):
+    st.markdown("<h2 style='text-ana: center; color: #7B1C79;'></h2>", unsafe_allow_html=True)
+    if st.button('¡Descubre el valor de la inversión!'):
 
         prediction = predict_model(model, data=input_data)
-        prediction_value = prediction["Valuation"].values[0].round(2)
+        prediction_result = prediction["prediction_label"].values[0].round(2)
+        result_text = f"$ {prediction_result} millones"
 
-        st.write(str(prediction_value) + ' euros')
-        ROI = prediction['Valuation'].values[0] - Funding
-        st.write('ROI: ' + str(ROI))
+        # Estilos CSS para el box con color violeta
+        box_style = """
+            background-color: #a977a8;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        """
 
-
-
-
-
-
-
-
-
+        # Crear el box con el resultado de la predicción y aplicar los estilos
+        st.markdown(f'<div style="{box_style}">{result_text}</div>', unsafe_allow_html=True)
 
 
 if selected == 'Conclusión':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Conclusión</h2>", unsafe_allow_html=True)
     
-    "aca va algo"
+    """
+    Al responder a nuestras preguntas iniciales, observamos lo siguiente:
+
+    * La mayor concentración de empresas unicornios se encuentra en **Estados Unidos** con **656** empresas luego están **China** e **India** con **171** y **70** 
+    empresas respectivamente. 
+    * La industria **tecnológica** predomina con un **48%** del total de empresas unicornio.
+    * A partir del año **2020**, estas empresas han experimentado un **crecimiento exponencial**, casi duplicando su cantidad para el año 2021.
+    * Cuando se realiza los *test de hipótesis*, se observó que **puede existir una influencia** en el valor sí la empresa **pertenece** a de **Estados Unidos** en 
+    comparación con **China**.
+    * Por el contrario, **no** encontramos un **factor determinante** en la valuación si la empresa ha alcanzado transformarse en unicornio en el año **2020**.
+
+    **Futuros estudios posibles** :
+    
+    Analizar como la presencia de estas empresas ha impactado en la situación económica del país, en términos de creación de empleo, nuevas inversiones y el fomento de 
+    innovaciones tecnológicas.
+    """
+    st.write("<h4 style='text-ana: center; color: #7B1C79;'>¡Muchas Gracias!</h4>", unsafe_allow_html=True)
 
 
 

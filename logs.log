@@ -32891,3 +32891,1378 @@ lightgbm.basic.LightGBMError: Do not support special JSON characters in feature 
                  TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
                 ('actual_estimator', LinearRegression(n_jobs=-1))])
 2023-07-20 00:56:16,938:INFO:save_model() successfully completed......................................
+2023-07-20 08:25:24,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 08:25:24,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 08:25:24,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 08:25:24,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 08:25:27,225:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 08:25:33,905:INFO:Initializing load_model()
+2023-07-20 08:25:33,905:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:25:44,330:INFO:Initializing load_model()
+2023-07-20 08:25:44,330:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:25:55,777:INFO:Initializing load_model()
+2023-07-20 08:25:55,777:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:25:57,982:INFO:Initializing load_model()
+2023-07-20 08:25:57,982:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:26:10,274:INFO:Initializing load_model()
+2023-07-20 08:26:10,274:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:26:19,158:INFO:Initializing load_model()
+2023-07-20 08:26:19,158:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:26:23,762:INFO:Initializing load_model()
+2023-07-20 08:26:23,762:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:26:23,956:INFO:Initializing predict_model()
+2023-07-20 08:26:23,956:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021EA14B0FD0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country', 'Continent',
+                                             'Industry_Country',
+                                             'Industry...
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country', 'Industry_Country',
+                                             'Industry_Funding'],
+                                    transformer=TargetEncoder(cols=['Country',
+                                                                    'Industry_Country',
+                                                                    'Industry_Funding'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021EA1DBD090>)
+2023-07-20 08:26:23,956:INFO:Checking exceptions
+2023-07-20 08:26:23,956:INFO:Preloading libraries
+2023-07-20 08:26:23,956:INFO:Set up data.
+2023-07-20 08:26:23,966:INFO:Set up index.
+2023-07-20 08:42:27,334:INFO:Initializing load_model()
+2023-07-20 08:42:27,334:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:43:43,293:INFO:Initializing load_model()
+2023-07-20 08:43:43,293:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:43:47,411:INFO:Initializing load_model()
+2023-07-20 08:43:47,411:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:43:51,650:INFO:Initializing load_model()
+2023-07-20 08:43:51,650:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:44:04,065:INFO:Initializing predict_model()
+2023-07-20 08:44:04,065:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021EF7645C00>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country', 'Continent',
+                                             'Industry_Country',
+                                             'Industry...
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country', 'Industry_Country',
+                                             'Industry_Funding'],
+                                    transformer=TargetEncoder(cols=['Country',
+                                                                    'Industry_Country',
+                                                                    'Industry_Funding'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021EA1906050>)
+2023-07-20 08:44:04,077:INFO:Checking exceptions
+2023-07-20 08:44:04,077:INFO:Preloading libraries
+2023-07-20 08:44:04,077:INFO:Set up data.
+2023-07-20 08:44:04,081:INFO:Set up index.
+2023-07-20 08:46:02,392:INFO:Initializing load_model()
+2023-07-20 08:46:02,392:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:11,150:INFO:Initializing load_model()
+2023-07-20 08:47:11,150:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:15,223:INFO:Initializing load_model()
+2023-07-20 08:47:15,223:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:17,298:INFO:Initializing load_model()
+2023-07-20 08:47:17,298:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:19,923:INFO:Initializing load_model()
+2023-07-20 08:47:19,923:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:22,313:INFO:Initializing load_model()
+2023-07-20 08:47:22,313:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:27,717:INFO:Initializing load_model()
+2023-07-20 08:47:27,717:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:30,450:INFO:Initializing load_model()
+2023-07-20 08:47:30,450:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:34,639:INFO:Initializing load_model()
+2023-07-20 08:47:34,639:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:47:34,812:INFO:Initializing predict_model()
+2023-07-20 08:47:34,812:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021EA41EDF30>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country', 'Continent',
+                                             'Industry_Country',
+                                             'Industry...
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country', 'Industry_Country',
+                                             'Industry_Funding'],
+                                    transformer=TargetEncoder(cols=['Country',
+                                                                    'Industry_Country',
+                                                                    'Industry_Funding'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021EA19B8B80>)
+2023-07-20 08:47:34,812:INFO:Checking exceptions
+2023-07-20 08:47:34,812:INFO:Preloading libraries
+2023-07-20 08:47:34,812:INFO:Set up data.
+2023-07-20 08:47:34,827:INFO:Set up index.
+2023-07-20 08:48:29,565:INFO:Initializing load_model()
+2023-07-20 08:48:29,565:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:34,576:INFO:Initializing load_model()
+2023-07-20 08:48:34,576:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:35,025:INFO:Initializing load_model()
+2023-07-20 08:48:35,025:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:39,708:INFO:Initializing load_model()
+2023-07-20 08:48:39,708:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:40,622:INFO:Initializing load_model()
+2023-07-20 08:48:40,622:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:41,078:INFO:Initializing load_model()
+2023-07-20 08:48:41,078:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:44,235:INFO:Initializing load_model()
+2023-07-20 08:48:44,235:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:45,343:INFO:Initializing load_model()
+2023-07-20 08:48:45,343:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:48:46,385:INFO:Initializing load_model()
+2023-07-20 08:48:46,385:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:49:41,029:INFO:Initializing load_model()
+2023-07-20 08:49:41,029:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:49:50,492:INFO:Initializing load_model()
+2023-07-20 08:49:50,492:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:49:52,748:INFO:Initializing load_model()
+2023-07-20 08:49:52,748:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:49:52,952:INFO:Initializing predict_model()
+2023-07-20 08:49:52,952:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021EA4161AB0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country', 'Continent',
+                                             'Industry_Country',
+                                             'Industry...
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country', 'Industry_Country',
+                                             'Industry_Funding'],
+                                    transformer=TargetEncoder(cols=['Country',
+                                                                    'Industry_Country',
+                                                                    'Industry_Funding'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021E8A481BD0>)
+2023-07-20 08:49:52,952:INFO:Checking exceptions
+2023-07-20 08:49:52,952:INFO:Preloading libraries
+2023-07-20 08:49:52,968:INFO:Set up data.
+2023-07-20 08:49:52,984:INFO:Set up index.
+2023-07-20 08:54:37,798:INFO:Initializing load_model()
+2023-07-20 08:54:37,798:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:41,516:INFO:Initializing load_model()
+2023-07-20 08:54:41,516:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:43,261:INFO:Initializing load_model()
+2023-07-20 08:54:43,261:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:46,261:INFO:Initializing load_model()
+2023-07-20 08:54:46,261:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:49,249:INFO:Initializing load_model()
+2023-07-20 08:54:49,249:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:49,925:INFO:Initializing load_model()
+2023-07-20 08:54:49,925:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:50,728:INFO:Initializing load_model()
+2023-07-20 08:54:50,728:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:51,929:INFO:Initializing load_model()
+2023-07-20 08:54:51,929:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:52,871:INFO:Initializing load_model()
+2023-07-20 08:54:52,871:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:53,767:INFO:Initializing load_model()
+2023-07-20 08:54:53,767:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:54,883:INFO:Initializing load_model()
+2023-07-20 08:54:54,883:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:54:56,295:INFO:Initializing load_model()
+2023-07-20 08:54:56,295:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:55:01,609:INFO:Initializing load_model()
+2023-07-20 08:55:01,609:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 08:55:01,797:INFO:Initializing predict_model()
+2023-07-20 08:55:01,797:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021EA4AB9000>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country', 'Continent',
+                                             'Industry_Country',
+                                             'Industry...
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country', 'Industry_Country',
+                                             'Industry_Funding'],
+                                    transformer=TargetEncoder(cols=['Country',
+                                                                    'Industry_Country',
+                                                                    'Industry_Funding'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021EA61023B0>)
+2023-07-20 08:55:01,797:INFO:Checking exceptions
+2023-07-20 08:55:01,797:INFO:Preloading libraries
+2023-07-20 08:55:01,797:INFO:Set up data.
+2023-07-20 08:55:01,797:INFO:Set up index.
+2023-07-20 09:07:32,666:INFO:Initializing load_model()
+2023-07-20 09:07:32,666:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:10:53,351:INFO:Initializing load_model()
+2023-07-20 09:10:53,352:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:10:56,457:INFO:Initializing load_model()
+2023-07-20 09:10:56,458:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:10:58,719:INFO:Initializing load_model()
+2023-07-20 09:10:58,719:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:01,267:INFO:Initializing load_model()
+2023-07-20 09:11:01,267:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:02,947:INFO:Initializing load_model()
+2023-07-20 09:11:02,948:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:03,829:INFO:Initializing load_model()
+2023-07-20 09:11:03,830:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:05,186:INFO:Initializing load_model()
+2023-07-20 09:11:05,187:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:06,482:INFO:Initializing load_model()
+2023-07-20 09:11:06,483:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:07,830:INFO:Initializing load_model()
+2023-07-20 09:11:07,831:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:08,707:INFO:Initializing load_model()
+2023-07-20 09:11:08,708:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:09,257:INFO:Initializing load_model()
+2023-07-20 09:11:09,259:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:10,085:INFO:Initializing load_model()
+2023-07-20 09:11:10,086:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:11,002:INFO:Initializing load_model()
+2023-07-20 09:11:11,003:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:11,374:INFO:Initializing load_model()
+2023-07-20 09:11:11,376:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:22,428:INFO:Initializing load_model()
+2023-07-20 09:11:22,430:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:23,172:INFO:Initializing load_model()
+2023-07-20 09:11:23,173:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:24,176:INFO:Initializing load_model()
+2023-07-20 09:11:24,178:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:11:24,373:INFO:Initializing predict_model()
+2023-07-20 09:11:24,373:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000021EA7221ED0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country', 'Continent',
+                                             'Industry_Country',
+                                             'Industry...
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country', 'Industry_Country',
+                                             'Industry_Funding'],
+                                    transformer=TargetEncoder(cols=['Country',
+                                                                    'Industry_Country',
+                                                                    'Industry_Funding'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6779))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000021EA6B8E710>)
+2023-07-20 09:11:24,374:INFO:Checking exceptions
+2023-07-20 09:11:24,374:INFO:Preloading libraries
+2023-07-20 09:11:24,376:INFO:Set up data.
+2023-07-20 09:11:24,392:INFO:Set up index.
+2023-07-20 09:25:09,915:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:25:09,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:25:09,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:25:09,916:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:25:11,985:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 09:25:30,949:INFO:PyCaret RegressionExperiment
+2023-07-20 09:25:30,950:INFO:Logging name: reg-default-name
+2023-07-20 09:25:30,950:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-07-20 09:25:30,950:INFO:version 3.0.2
+2023-07-20 09:25:30,950:INFO:Initializing setup()
+2023-07-20 09:25:30,950:INFO:self.USI: 0f24
+2023-07-20 09:25:30,951:INFO:self._variable_keys: {'X_test', 'fold_generator', 'transform_target_param', 'exp_id', 'target_param', 'exp_name_log', 'X', 'log_plots_param', '_ml_usecase', 'fold_shuffle_param', 'pipeline', 'seed', 'memory', 'gpu_param', 'USI', 'y', 'html_param', 'fold_groups_param', 'logging_param', 'y_test', 'idx', 'data', 'y_train', 'gpu_n_jobs_param', 'n_jobs_param', '_available_plots', 'X_train'}
+2023-07-20 09:25:30,951:INFO:Checking environment
+2023-07-20 09:25:30,951:INFO:python_version: 3.10.11
+2023-07-20 09:25:30,951:INFO:python_build: ('tags/v3.10.11:7d4cc5a', 'Apr  5 2023 00:38:17')
+2023-07-20 09:25:30,951:INFO:machine: AMD64
+2023-07-20 09:25:30,951:INFO:platform: Windows-10-10.0.22621-SP0
+2023-07-20 09:25:30,961:INFO:Memory: svmem(total=7386636288, available=990273536, percent=86.6, used=6396362752, free=990273536)
+2023-07-20 09:25:30,963:INFO:Physical Core: 4
+2023-07-20 09:25:30,964:INFO:Logical Core: 8
+2023-07-20 09:25:30,964:INFO:Checking libraries
+2023-07-20 09:25:30,965:INFO:System:
+2023-07-20 09:25:30,965:INFO:    python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2023-07-20 09:25:30,965:INFO:executable: C:\Users\fabia\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\python.exe
+2023-07-20 09:25:30,965:INFO:   machine: Windows-10-10.0.22621-SP0
+2023-07-20 09:25:30,965:INFO:PyCaret required dependencies:
+2023-07-20 09:25:30,965:INFO:                 pip: 23.0.1
+2023-07-20 09:25:30,965:INFO:          setuptools: 65.5.0
+2023-07-20 09:25:30,966:INFO:             pycaret: 3.0.2
+2023-07-20 09:25:30,966:INFO:             IPython: 8.13.2
+2023-07-20 09:25:30,966:INFO:          ipywidgets: 8.0.6
+2023-07-20 09:25:30,966:INFO:                tqdm: 4.65.0
+2023-07-20 09:25:30,966:INFO:               numpy: 1.23.5
+2023-07-20 09:25:30,966:INFO:              pandas: 2.0.2
+2023-07-20 09:25:30,966:INFO:              jinja2: 3.1.2
+2023-07-20 09:25:30,966:INFO:               scipy: 1.10.1
+2023-07-20 09:25:30,966:INFO:              joblib: 1.2.0
+2023-07-20 09:25:30,966:INFO:             sklearn: 1.2.2
+2023-07-20 09:25:30,967:INFO:                pyod: 1.0.9
+2023-07-20 09:25:30,967:INFO:            imblearn: 0.10.1
+2023-07-20 09:25:30,967:INFO:   category_encoders: 2.6.1
+2023-07-20 09:25:30,967:INFO:            lightgbm: 3.3.5
+2023-07-20 09:25:30,967:INFO:               numba: 0.57.0
+2023-07-20 09:25:30,967:INFO:            requests: 2.31.0
+2023-07-20 09:25:30,967:INFO:          matplotlib: 3.7.1
+2023-07-20 09:25:30,967:INFO:          scikitplot: 0.3.7
+2023-07-20 09:25:30,967:INFO:         yellowbrick: 1.5
+2023-07-20 09:25:30,967:INFO:              plotly: 5.15.0
+2023-07-20 09:25:30,967:INFO:             kaleido: 0.2.1
+2023-07-20 09:25:30,967:INFO:         statsmodels: 0.14.0
+2023-07-20 09:25:30,967:INFO:              sktime: 0.17.0
+2023-07-20 09:25:30,968:INFO:               tbats: 1.1.3
+2023-07-20 09:25:30,968:INFO:            pmdarima: 2.0.3
+2023-07-20 09:25:30,968:INFO:              psutil: 5.9.5
+2023-07-20 09:25:30,968:INFO:PyCaret optional dependencies:
+2023-07-20 09:25:43,426:INFO:                shap: Not installed
+2023-07-20 09:25:43,426:INFO:           interpret: Not installed
+2023-07-20 09:25:43,427:INFO:                umap: Not installed
+2023-07-20 09:25:43,427:INFO:    pandas_profiling: Not installed
+2023-07-20 09:25:43,427:INFO:  explainerdashboard: Not installed
+2023-07-20 09:25:43,427:INFO:             autoviz: Not installed
+2023-07-20 09:25:43,427:INFO:           fairlearn: Not installed
+2023-07-20 09:25:43,427:INFO:             xgboost: 1.7.5
+2023-07-20 09:25:43,427:INFO:            catboost: Not installed
+2023-07-20 09:25:43,427:INFO:              kmodes: Not installed
+2023-07-20 09:25:43,427:INFO:             mlxtend: Not installed
+2023-07-20 09:25:43,427:INFO:       statsforecast: Not installed
+2023-07-20 09:25:43,427:INFO:        tune_sklearn: Not installed
+2023-07-20 09:25:43,427:INFO:                 ray: Not installed
+2023-07-20 09:25:43,428:INFO:            hyperopt: Not installed
+2023-07-20 09:25:43,428:INFO:              optuna: Not installed
+2023-07-20 09:25:43,428:INFO:               skopt: Not installed
+2023-07-20 09:25:43,428:INFO:              mlflow: Not installed
+2023-07-20 09:25:43,428:INFO:              gradio: 3.34.0
+2023-07-20 09:25:43,428:INFO:             fastapi: 0.96.0
+2023-07-20 09:25:43,428:INFO:             uvicorn: 0.22.0
+2023-07-20 09:25:43,428:INFO:              m2cgen: Not installed
+2023-07-20 09:25:43,428:INFO:           evidently: Not installed
+2023-07-20 09:25:43,429:INFO:               fugue: Not installed
+2023-07-20 09:25:43,429:INFO:           streamlit: 1.24.1
+2023-07-20 09:25:43,429:INFO:             prophet: Not installed
+2023-07-20 09:25:43,429:INFO:None
+2023-07-20 09:25:43,429:INFO:Set up data.
+2023-07-20 09:25:43,455:INFO:Set up train/test split.
+2023-07-20 09:25:43,482:INFO:Set up index.
+2023-07-20 09:25:43,484:INFO:Set up folding strategy.
+2023-07-20 09:25:43,485:INFO:Assigning column types.
+2023-07-20 09:25:43,539:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-07-20 09:25:43,540:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-07-20 09:25:43,568:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 09:25:43,588:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 09:25:43,866:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:43,988:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:43,990:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:44,984:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:44,986:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-07-20 09:25:44,996:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,006:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,138:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,248:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,250:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:45,257:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:45,258:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2023-07-20 09:25:45,270:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,280:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,540:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,693:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,694:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:45,701:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:45,712:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,723:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,861:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,967:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:45,969:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:45,976:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:45,977:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2023-07-20 09:25:46,000:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,156:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,274:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,276:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:46,283:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:46,306:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,442:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,537:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,538:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:46,543:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:46,543:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2023-07-20 09:25:46,699:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,811:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:46,817:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:46,826:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:46,986:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:47,085:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 09:25:47,087:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:47,093:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:47,093:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-07-20 09:25:47,247:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:47,355:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:47,363:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:47,534:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-07-20 09:25:47,645:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:47,653:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:47,654:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2023-07-20 09:25:48,037:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:48,049:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:48,352:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:48,358:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:48,373:INFO:Preparing preprocessing pipeline...
+2023-07-20 09:25:48,373:INFO:Set up simple imputation.
+2023-07-20 09:25:48,382:INFO:Set up encoding of categorical features.
+2023-07-20 09:25:48,383:INFO:Set up removing outliers.
+2023-07-20 09:25:48,782:INFO:Finished creating preprocessing pipeline.
+2023-07-20 09:25:48,815:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                 TransformerWrapper(include=['Industry', 'Continent'],
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195)))])
+2023-07-20 09:25:48,816:INFO:Creating final display dataframe.
+2023-07-20 09:25:49,441:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:25:51,621:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:25:52,504:INFO:Setup _display_container:                     Description             Value
+0                    Session id              4195
+1                        Target         Valuation
+2                   Target type        Regression
+3           Original data shape         (1945, 9)
+4        Transformed data shape        (1877, 29)
+5   Transformed train set shape        (1293, 29)
+6    Transformed test set shape         (584, 29)
+7              Numeric features                 5
+8          Categorical features                 3
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15              Remove outliers              True
+16           Outliers threshold              0.05
+17               Fold Generator             KFold
+18                  Fold Number                10
+19                     CPU Jobs                -1
+20                      Use GPU             False
+21               Log Experiment             False
+22              Experiment Name  reg-default-name
+23                          USI              0f24
+2023-07-20 09:25:52,897:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:52,905:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:53,182:INFO:Soft dependency imported: xgboost: 1.7.5
+2023-07-20 09:25:53,189:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 09:25:53,190:INFO:setup() successfully completed in 31.62s...............
+2023-07-20 09:25:59,146:INFO:Initializing create_model()
+2023-07-20 09:25:59,146:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 09:25:59,147:INFO:Checking exceptions
+2023-07-20 09:25:59,215:INFO:Importing libraries
+2023-07-20 09:25:59,216:INFO:Copying training dataset
+2023-07-20 09:25:59,237:INFO:Defining folds
+2023-07-20 09:25:59,238:INFO:Declaring metric variables
+2023-07-20 09:25:59,249:INFO:Importing untrained model
+2023-07-20 09:25:59,261:INFO:Linear Regression Imported successfully
+2023-07-20 09:25:59,298:INFO:Starting cross validation
+2023-07-20 09:25:59,445:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 09:26:21,931:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:21,941:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:21,958:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:22,231:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:22,277:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:22,279:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:22,405:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:22,657:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:23,462:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-07-20 09:26:23,669:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-07-20 09:26:23,736:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-07-20 09:26:23,758:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:238: UserWarning: Persisting input arguments took 0.58s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y = self._memory_transform(
+
+2023-07-20 09:26:24,882:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.56s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 09:26:24,960:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 09:26:25,045:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.62s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 09:26:25,050:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 09:26:25,257:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 09:26:57,519:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:26:57,519:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:28:09,938:INFO:Calculating mean and std
+2023-07-20 09:28:09,994:INFO:Creating metrics dataframe
+2023-07-20 09:28:10,154:INFO:Finalizing model
+2023-07-20 09:28:29,754:INFO:Uploading results into container
+2023-07-20 09:28:29,758:INFO:Uploading model into container now
+2023-07-20 09:28:29,796:INFO:_master_model_container: 1
+2023-07-20 09:28:29,797:INFO:_display_container: 2
+2023-07-20 09:28:29,798:INFO:LinearRegression(n_jobs=-1)
+2023-07-20 09:28:29,799:INFO:create_model() successfully completed......................................
+2023-07-20 09:29:18,480:INFO:Initializing tune_model()
+2023-07-20 09:29:18,481:INFO:tune_model(estimator=LinearRegression(n_jobs=-1), fold=None, round=4, n_iter=10, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>)
+2023-07-20 09:29:18,481:INFO:Checking exceptions
+2023-07-20 09:29:18,559:INFO:Copying training dataset
+2023-07-20 09:29:18,584:INFO:Checking base model
+2023-07-20 09:29:18,585:INFO:Base model : Linear Regression
+2023-07-20 09:29:18,607:INFO:Declaring metric variables
+2023-07-20 09:29:18,620:INFO:Defining Hyperparameters
+2023-07-20 09:29:18,621:INFO:10 is bigger than total combinations 2, setting search algorithm to grid
+2023-07-20 09:29:19,072:INFO:Tuning with n_jobs=-1
+2023-07-20 09:29:19,073:INFO:Initializing GridSearchCV
+2023-07-20 09:29:20,699:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\pycaret\internal\pipeline.py:231: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_transformer = self._memory_fit(
+
+2023-07-20 09:32:28,467:INFO:best_params: {'actual_estimator__fit_intercept': False}
+2023-07-20 09:32:28,472:INFO:Hyperparameter search completed
+2023-07-20 09:32:28,473:INFO:SubProcess create_model() called ==================================
+2023-07-20 09:32:28,474:INFO:Initializing create_model()
+2023-07-20 09:32:28,474:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, estimator=LinearRegression(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000270A4128700>, model_only=True, return_train_score=False, kwargs={'fit_intercept': False})
+2023-07-20 09:32:28,474:INFO:Checking exceptions
+2023-07-20 09:32:28,475:INFO:Importing libraries
+2023-07-20 09:32:28,475:INFO:Copying training dataset
+2023-07-20 09:32:28,498:INFO:Defining folds
+2023-07-20 09:32:28,499:INFO:Declaring metric variables
+2023-07-20 09:32:28,510:INFO:Importing untrained model
+2023-07-20 09:32:28,511:INFO:Declaring custom model
+2023-07-20 09:32:28,522:INFO:Linear Regression Imported successfully
+2023-07-20 09:32:28,552:INFO:Starting cross validation
+2023-07-20 09:32:28,577:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 09:33:58,056:INFO:Calculating mean and std
+2023-07-20 09:33:58,058:INFO:Creating metrics dataframe
+2023-07-20 09:33:58,076:INFO:Finalizing model
+2023-07-20 09:34:11,990:INFO:Uploading results into container
+2023-07-20 09:34:12,000:INFO:Uploading model into container now
+2023-07-20 09:34:12,009:INFO:_master_model_container: 2
+2023-07-20 09:34:12,011:INFO:_display_container: 3
+2023-07-20 09:34:12,018:INFO:LinearRegression(fit_intercept=False, n_jobs=-1)
+2023-07-20 09:34:12,019:INFO:create_model() successfully completed......................................
+2023-07-20 09:34:12,544:INFO:SubProcess create_model() end ==================================
+2023-07-20 09:34:12,544:INFO:choose_better activated
+2023-07-20 09:34:12,557:INFO:SubProcess create_model() called ==================================
+2023-07-20 09:34:12,558:INFO:Initializing create_model()
+2023-07-20 09:34:12,559:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, estimator=LinearRegression(n_jobs=-1), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 09:34:12,560:INFO:Checking exceptions
+2023-07-20 09:34:12,565:INFO:Importing libraries
+2023-07-20 09:34:12,565:INFO:Copying training dataset
+2023-07-20 09:34:12,583:INFO:Defining folds
+2023-07-20 09:34:12,583:INFO:Declaring metric variables
+2023-07-20 09:34:12,585:INFO:Importing untrained model
+2023-07-20 09:34:12,585:INFO:Declaring custom model
+2023-07-20 09:34:12,585:INFO:Linear Regression Imported successfully
+2023-07-20 09:34:12,587:INFO:Starting cross validation
+2023-07-20 09:34:12,602:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 09:35:43,694:INFO:Calculating mean and std
+2023-07-20 09:35:43,695:INFO:Creating metrics dataframe
+2023-07-20 09:35:43,702:INFO:Finalizing model
+2023-07-20 09:35:56,011:INFO:Uploading results into container
+2023-07-20 09:35:56,014:INFO:Uploading model into container now
+2023-07-20 09:35:56,015:INFO:_master_model_container: 3
+2023-07-20 09:35:56,015:INFO:_display_container: 4
+2023-07-20 09:35:56,016:INFO:LinearRegression(n_jobs=-1)
+2023-07-20 09:35:56,016:INFO:create_model() successfully completed......................................
+2023-07-20 09:35:56,329:INFO:SubProcess create_model() end ==================================
+2023-07-20 09:35:56,331:INFO:LinearRegression(n_jobs=-1) result for R2 is 1.0
+2023-07-20 09:35:56,333:INFO:LinearRegression(fit_intercept=False, n_jobs=-1) result for R2 is 1.0
+2023-07-20 09:35:56,333:INFO:LinearRegression(n_jobs=-1) is best model
+2023-07-20 09:35:56,333:INFO:choose_better completed
+2023-07-20 09:35:56,334:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-07-20 09:35:56,363:INFO:_master_model_container: 3
+2023-07-20 09:35:56,364:INFO:_display_container: 3
+2023-07-20 09:35:56,365:INFO:LinearRegression(n_jobs=-1)
+2023-07-20 09:35:56,366:INFO:tune_model() successfully completed......................................
+2023-07-20 09:36:24,085:INFO:Initializing evaluate_model()
+2023-07-20 09:36:24,086:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, estimator=LinearRegression(n_jobs=-1), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None, use_train_data=False)
+2023-07-20 09:36:24,182:INFO:Initializing plot_model()
+2023-07-20 09:36:24,182:INFO:plot_model(plot=pipeline, fold=KFold(n_splits=10, random_state=None, shuffle=False), use_train_data=False, verbose=False, display=None, display_format=None, estimator=LinearRegression(n_jobs=-1), feature_name=None, fit_kwargs={}, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, system=True)
+2023-07-20 09:36:24,183:INFO:Checking exceptions
+2023-07-20 09:36:24,190:INFO:Preloading libraries
+2023-07-20 09:36:24,191:INFO:Copying training dataset
+2023-07-20 09:36:24,191:INFO:Plot type: pipeline
+2023-07-20 09:36:25,341:INFO:Visual Rendered Successfully
+2023-07-20 09:36:25,658:INFO:plot_model() successfully completed......................................
+2023-07-20 09:36:28,558:INFO:Initializing finalize_model()
+2023-07-20 09:36:28,559:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, estimator=LinearRegression(n_jobs=-1), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2023-07-20 09:36:28,560:INFO:Finalizing LinearRegression(n_jobs=-1)
+2023-07-20 09:36:28,575:INFO:Initializing create_model()
+2023-07-20 09:36:28,576:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000270C916DDB0>, estimator=LinearRegression(n_jobs=-1), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, kwargs={})
+2023-07-20 09:36:28,576:INFO:Checking exceptions
+2023-07-20 09:36:28,585:INFO:Importing libraries
+2023-07-20 09:36:28,586:INFO:Copying training dataset
+2023-07-20 09:36:28,587:INFO:Defining folds
+2023-07-20 09:36:28,588:INFO:Declaring metric variables
+2023-07-20 09:36:28,589:INFO:Importing untrained model
+2023-07-20 09:36:28,589:INFO:Declaring custom model
+2023-07-20 09:36:28,591:INFO:Linear Regression Imported successfully
+2023-07-20 09:36:28,621:INFO:Cross validation set to False
+2023-07-20 09:36:28,622:INFO:Fitting Model
+2023-07-20 09:36:29,222:WARNING:C:\Users\fabia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\sklearn\base.py:439: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2023-07-20 09:36:29,794:INFO:Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))])
+2023-07-20 09:36:29,795:INFO:create_model() successfully completed......................................
+2023-07-20 09:36:30,101:INFO:_master_model_container: 3
+2023-07-20 09:36:30,102:INFO:_display_container: 3
+2023-07-20 09:36:30,124:INFO:Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))])
+2023-07-20 09:36:30,124:INFO:finalize_model() successfully completed......................................
+2023-07-20 09:36:33,124:INFO:Initializing save_model()
+2023-07-20 09:36:33,125:INFO:save_model(model=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), model_name=ml_unicornios, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                 TransformerWrapper(include=['Industry', 'Continent'],
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195)))]), verbose=True, use_case=MLUsecase.REGRESSION, kwargs={})
+2023-07-20 09:36:33,125:INFO:Adding model into prep_pipe
+2023-07-20 09:36:33,125:WARNING:Only Model saved as it was a pipeline.
+2023-07-20 09:36:33,245:INFO:ml_unicornios.pkl saved in current working directory
+2023-07-20 09:36:33,271:INFO:Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))])
+2023-07-20 09:36:33,271:INFO:save_model() successfully completed......................................
+2023-07-20 09:37:41,003:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:37:41,004:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:37:41,004:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:37:41,004:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 09:37:43,492:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 09:38:12,020:INFO:Initializing load_model()
+2023-07-20 09:38:12,020:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:34,420:INFO:Initializing load_model()
+2023-07-20 09:38:34,421:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:41,162:INFO:Initializing load_model()
+2023-07-20 09:38:41,163:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:41,896:INFO:Initializing load_model()
+2023-07-20 09:38:41,897:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:42,334:INFO:Initializing load_model()
+2023-07-20 09:38:42,336:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:42,746:INFO:Initializing load_model()
+2023-07-20 09:38:42,747:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:44,310:INFO:Initializing load_model()
+2023-07-20 09:38:44,311:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:55,428:INFO:Initializing load_model()
+2023-07-20 09:38:55,428:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:38:55,760:INFO:Initializing predict_model()
+2023-07-20 09:38:55,761:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002996D0C7BE0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002996AD765F0>)
+2023-07-20 09:38:55,762:INFO:Checking exceptions
+2023-07-20 09:38:55,762:INFO:Preloading libraries
+2023-07-20 09:38:55,763:INFO:Set up data.
+2023-07-20 09:38:55,819:INFO:Set up index.
+2023-07-20 09:39:59,001:INFO:Initializing load_model()
+2023-07-20 09:39:59,001:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:40:03,252:INFO:Initializing load_model()
+2023-07-20 09:40:03,253:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:40:05,171:INFO:Initializing load_model()
+2023-07-20 09:40:05,172:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:40:07,197:INFO:Initializing load_model()
+2023-07-20 09:40:07,198:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:40:12,436:INFO:Initializing load_model()
+2023-07-20 09:40:12,436:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:40:13,945:INFO:Initializing load_model()
+2023-07-20 09:40:13,945:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:40:14,124:INFO:Initializing predict_model()
+2023-07-20 09:40:14,125:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002996D184CA0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002996D119510>)
+2023-07-20 09:40:14,125:INFO:Checking exceptions
+2023-07-20 09:40:14,126:INFO:Preloading libraries
+2023-07-20 09:40:14,127:INFO:Set up data.
+2023-07-20 09:40:14,140:INFO:Set up index.
+2023-07-20 09:43:09,803:INFO:Initializing load_model()
+2023-07-20 09:43:09,803:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:43:14,017:INFO:Initializing load_model()
+2023-07-20 09:43:14,017:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:43:14,135:INFO:Initializing predict_model()
+2023-07-20 09:43:14,136:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002996D4B6410>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002996AD4ED40>)
+2023-07-20 09:43:14,136:INFO:Checking exceptions
+2023-07-20 09:43:14,136:INFO:Preloading libraries
+2023-07-20 09:43:14,136:INFO:Set up data.
+2023-07-20 09:43:14,144:INFO:Set up index.
+2023-07-20 09:44:03,421:INFO:Initializing load_model()
+2023-07-20 09:44:03,421:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:05,888:INFO:Initializing load_model()
+2023-07-20 09:44:05,888:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:05,997:INFO:Initializing predict_model()
+2023-07-20 09:44:05,998:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002996D4846D0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002996D065360>)
+2023-07-20 09:44:05,998:INFO:Checking exceptions
+2023-07-20 09:44:06,000:INFO:Preloading libraries
+2023-07-20 09:44:06,000:INFO:Set up data.
+2023-07-20 09:44:06,006:INFO:Set up index.
+2023-07-20 09:44:35,810:INFO:Initializing load_model()
+2023-07-20 09:44:35,811:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:37,725:INFO:Initializing load_model()
+2023-07-20 09:44:37,725:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:39,776:INFO:Initializing load_model()
+2023-07-20 09:44:39,777:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:41,964:INFO:Initializing load_model()
+2023-07-20 09:44:41,964:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:44,566:INFO:Initializing load_model()
+2023-07-20 09:44:44,566:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:46,178:INFO:Initializing load_model()
+2023-07-20 09:44:46,178:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:44:46,295:INFO:Initializing predict_model()
+2023-07-20 09:44:46,296:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002996D004910>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002996AD75000>)
+2023-07-20 09:44:46,297:INFO:Checking exceptions
+2023-07-20 09:44:46,297:INFO:Preloading libraries
+2023-07-20 09:44:46,298:INFO:Set up data.
+2023-07-20 09:44:46,309:INFO:Set up index.
+2023-07-20 09:47:02,634:INFO:Initializing load_model()
+2023-07-20 09:47:02,635:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:48:54,276:INFO:Initializing load_model()
+2023-07-20 09:48:54,276:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:49:45,080:INFO:Initializing load_model()
+2023-07-20 09:49:45,081:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:53:31,358:INFO:Initializing load_model()
+2023-07-20 09:53:31,359:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:53:33,636:INFO:Initializing load_model()
+2023-07-20 09:53:33,637:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:53:45,790:INFO:Initializing load_model()
+2023-07-20 09:53:45,791:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:55:25,217:INFO:Initializing load_model()
+2023-07-20 09:55:25,217:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:56:38,773:INFO:Initializing load_model()
+2023-07-20 09:56:38,773:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:58:11,462:INFO:Initializing load_model()
+2023-07-20 09:58:11,463:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 09:58:57,046:INFO:Initializing load_model()
+2023-07-20 09:58:57,046:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:02:12,278:INFO:Initializing load_model()
+2023-07-20 10:02:12,278:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:03:17,294:INFO:Initializing load_model()
+2023-07-20 10:03:17,296:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:03:23,079:INFO:Initializing load_model()
+2023-07-20 10:03:23,080:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:04:54,771:INFO:Initializing load_model()
+2023-07-20 10:04:54,771:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:05:35,216:INFO:Initializing load_model()
+2023-07-20 10:05:35,217:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:05:40,461:INFO:Initializing load_model()
+2023-07-20 10:05:40,462:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:05:41,077:INFO:Initializing load_model()
+2023-07-20 10:05:41,077:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:06:52,094:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:06:52,094:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:06:52,094:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:06:52,094:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:06:53,093:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 10:06:56,372:INFO:Initializing load_model()
+2023-07-20 10:06:56,373:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:06:58,390:INFO:Initializing load_model()
+2023-07-20 10:06:58,390:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:07:01,429:INFO:Initializing load_model()
+2023-07-20 10:07:01,430:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:08:02,035:INFO:Initializing load_model()
+2023-07-20 10:08:02,035:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:08:12,665:INFO:Initializing load_model()
+2023-07-20 10:08:12,665:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:08:36,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:08:36,928:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:08:36,928:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:08:36,928:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 10:08:37,667:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 10:08:38,266:INFO:Initializing load_model()
+2023-07-20 10:08:38,269:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:08:38,272:INFO:Initializing load_model()
+2023-07-20 10:08:38,275:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:08:38,277:INFO:Initializing load_model()
+2023-07-20 10:08:38,278:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:08:50,624:INFO:Initializing load_model()
+2023-07-20 10:08:50,624:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:09:42,630:INFO:Initializing load_model()
+2023-07-20 10:09:42,630:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:11:40,915:INFO:Initializing load_model()
+2023-07-20 10:11:40,915:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:18:44,508:INFO:Initializing load_model()
+2023-07-20 10:18:44,508:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:19:45,456:INFO:Initializing load_model()
+2023-07-20 10:19:45,457:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:19:45,552:INFO:Initializing predict_model()
+2023-07-20 10:19:45,552:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F319A7D0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F4C35000>)
+2023-07-20 10:19:45,553:INFO:Checking exceptions
+2023-07-20 10:19:45,553:INFO:Preloading libraries
+2023-07-20 10:19:45,553:INFO:Set up data.
+2023-07-20 10:19:45,561:INFO:Set up index.
+2023-07-20 10:19:48,329:INFO:Initializing load_model()
+2023-07-20 10:19:48,331:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:19:48,476:INFO:Initializing predict_model()
+2023-07-20 10:19:48,476:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F4163D60>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F497E5F0>)
+2023-07-20 10:19:48,476:INFO:Checking exceptions
+2023-07-20 10:19:48,477:INFO:Preloading libraries
+2023-07-20 10:19:48,477:INFO:Set up data.
+2023-07-20 10:19:48,483:INFO:Set up index.
+2023-07-20 10:22:28,037:INFO:Initializing load_model()
+2023-07-20 10:22:28,038:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:22:30,146:INFO:Initializing load_model()
+2023-07-20 10:22:30,148:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:22:30,283:INFO:Initializing predict_model()
+2023-07-20 10:22:30,283:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F4353E80>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F4900790>)
+2023-07-20 10:22:30,283:INFO:Checking exceptions
+2023-07-20 10:22:30,284:INFO:Preloading libraries
+2023-07-20 10:22:30,284:INFO:Set up data.
+2023-07-20 10:22:30,289:INFO:Set up index.
+2023-07-20 10:24:54,418:INFO:Initializing load_model()
+2023-07-20 10:24:54,419:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:24:56,516:INFO:Initializing load_model()
+2023-07-20 10:24:56,516:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:24:56,648:INFO:Initializing predict_model()
+2023-07-20 10:24:56,648:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F304FEB0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F4901870>)
+2023-07-20 10:24:56,648:INFO:Checking exceptions
+2023-07-20 10:24:56,649:INFO:Preloading libraries
+2023-07-20 10:24:56,649:INFO:Set up data.
+2023-07-20 10:24:56,656:INFO:Set up index.
+2023-07-20 10:25:25,960:INFO:Initializing load_model()
+2023-07-20 10:25:25,961:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:25:29,131:INFO:Initializing load_model()
+2023-07-20 10:25:29,131:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:25:40,936:INFO:Initializing load_model()
+2023-07-20 10:25:40,937:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:25:41,046:INFO:Initializing predict_model()
+2023-07-20 10:25:41,047:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F47781C0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F497EB90>)
+2023-07-20 10:25:41,048:INFO:Checking exceptions
+2023-07-20 10:25:41,048:INFO:Preloading libraries
+2023-07-20 10:25:41,049:INFO:Set up data.
+2023-07-20 10:25:41,056:INFO:Set up index.
+2023-07-20 10:27:03,908:INFO:Initializing load_model()
+2023-07-20 10:27:03,909:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:27:05,685:INFO:Initializing load_model()
+2023-07-20 10:27:05,685:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:27:05,819:INFO:Initializing predict_model()
+2023-07-20 10:27:05,819:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F3D02E00>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F4900B80>)
+2023-07-20 10:27:05,819:INFO:Checking exceptions
+2023-07-20 10:27:05,820:INFO:Preloading libraries
+2023-07-20 10:27:05,820:INFO:Set up data.
+2023-07-20 10:27:05,826:INFO:Set up index.
+2023-07-20 10:28:09,538:INFO:Initializing load_model()
+2023-07-20 10:28:09,539:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:28:11,472:INFO:Initializing load_model()
+2023-07-20 10:28:11,473:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:28:11,591:INFO:Initializing predict_model()
+2023-07-20 10:28:11,592:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000206F39DD720>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000206F4901D80>)
+2023-07-20 10:28:11,592:INFO:Checking exceptions
+2023-07-20 10:28:11,592:INFO:Preloading libraries
+2023-07-20 10:28:11,594:INFO:Set up data.
+2023-07-20 10:28:11,600:INFO:Set up index.
+2023-07-20 10:29:23,216:INFO:Initializing load_model()
+2023-07-20 10:29:23,217:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:30:03,125:INFO:Initializing load_model()
+2023-07-20 10:30:03,125:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:41:19,316:INFO:Initializing load_model()
+2023-07-20 10:41:19,316:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:43:00,390:INFO:Initializing load_model()
+2023-07-20 10:43:00,390:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 10:45:33,020:INFO:Initializing load_model()
+2023-07-20 10:45:33,020:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 11:21:50,191:INFO:Initializing load_model()
+2023-07-20 11:21:50,192:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 12:25:40,380:INFO:Initializing load_model()
+2023-07-20 12:25:40,382:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-20 12:51:39,779:INFO:Initializing load_model()
+2023-07-20 12:51:39,780:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
