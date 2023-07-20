@@ -354,11 +354,6 @@ if selected == 'Análisis Exploratorio':
         st.plotly_chart(fig5,use_container_width=True)
 
  
-    
-    
-
-
-
 if selected == 'Probando Hipótesis':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Probando Hipótesis</h2>", unsafe_allow_html=True)
     
@@ -376,6 +371,7 @@ if selected == 'Probando Hipótesis':
     aquellas empresas que entraron a la lista en el año 2020 y las demás. 
     * **Shapiro-Wilk**: se empleó para determinar si las variables tienen una distribución normal o no. Esto es importante para poder utilizar el test *Mann-Whitney-U* 
     ya que es un tipo de test no paramétrico.
+
     Para ambos test se utilizó un nivel de **significancia** de **0.05**, lo que implica que si el p-valor obtenido es menor que 0.05, se rechaza la hipótesis nula.
     """
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Primer A/B Testing</h3>", unsafe_allow_html=True)
@@ -485,7 +481,7 @@ if selected == 'Probando Hipótesis':
         template="plotly_dark"
         )
         fig7.update_layout(
-                        title='Distribución de Valuación en el año 2020',
+                        title='Distribución de Valuación resto de los años',
                         xaxis=dict(title='Valuación',tickfont=custom_font),
                         yaxis=dict(title=''),
                         bargap=0.1,
@@ -545,13 +541,13 @@ if selected == 'Machine Learning':
        'Auto & transportation', 'Travel', 'Cybersecurity',
        'Mobile & telecommunications', 'Artificial Intelligence'])
 
-    Year_Founded = st.slider('**Año en que la empresa se fundó**', min_value=2002, max_value=2023, value=2010)
+    Year_Founded = st.slider('**Año en que la empresa se fundó**', min_value=2012, max_value=2023, value=2013)
 
     Years_Since_Founded = 2023 - Year_Founded
     
     Funding_Age_Ratio = Funding / Years_Since_Founded
     
-    ROI = ((st.slider('**% Rentabilidad**', min_value=1, max_value=100, value=10)/100)+1)* int(Funding)
+    ROI = ((st.slider('**% Rentabilidad**', min_value=1, max_value=100, value=5)/100)+1)* int(Funding)
 
     input_data = pd.DataFrame([[
         
@@ -588,7 +584,7 @@ if selected == 'Conclusión':
 
     * La mayor concentración de empresas unicornios se encuentra en **Estados Unidos** con **656** empresas luego están **China** e **India** con **171** y **70** 
     empresas respectivamente. 
-    * La industria **tecnológica** predomina con un **48%** del total de empresas unicornio.
+    * La industria **"Internet Software & Services"** es la que predomina con un 30% del total de empresas unicornio.
     * A partir del año **2020**, estas empresas han experimentado un **crecimiento exponencial**, casi duplicando su cantidad para el año 2021.
     * Cuando se realiza los *test de hipótesis*, se observó que **puede existir una influencia** en el valor sí la empresa **pertenece** a de **Estados Unidos** en 
     comparación con **China**.
