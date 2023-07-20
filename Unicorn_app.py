@@ -206,7 +206,31 @@ if selected == 'Análisis Exploratorio':
         with open(archivo_html, 'r', encoding='utf-8') as f:
             contenido_html = f.read()
 
-        st.components.v1.html(contenido_html, width=1300, height=800)
+        st.components.v1.html(contenido_html, width=1000, height=500)
+
+        # Continente y año
+        continent  = unicorns.groupby(['Continent', 'Year'])['Company'].count().reset_index()
+        # Total de empresas por continente y año
+        total_continent = continent.groupby('Year')['Company'].transform('sum')
+        # % de empresas 
+        continent['Percentage'] = (continent['Company'] / total_continent) * 100
+        # Ordenar 
+        continent_percentage = continent.sort_values(by='Percentage', ascending=False)
+
+
+        fig = px.bar(continent_percentage, x="Year", y="Percentage", color="Continent",
+             template="plotly_dark", color_discrete_sequence=colors)
+
+        fig.update_layout(
+            title='Porcentaje de Empresas en la Lista por Continente y Año',
+            xaxis=dict(title='Año'),
+            yaxis=dict(title='Porcentaje'),
+            showlegend=True     
+        )
+        fig.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
+                        'paper_bgcolor': 'rgba(255, 255, 255, 0.4)'})
+        st.plotly_chart(fig,use_container_width=True)
+        
 
 
     with tab2:
@@ -252,7 +276,7 @@ if selected == 'Análisis Exploratorio':
     with tab3:
         st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>Evolución</h3>", unsafe_allow_html=True)
         """
-        Las empresas unicornio han experimentado un crecimiento significativo a lo largo de los años. Se puede observar una gran diferencia en el año 2020, donde el 
+        Las empresas unicornio han experimentado un crecimiento significativo a lo largo de los años. Se puede observar una gran cambio de tendencia en el año 2020, donde el 
         número de empresas unicornio pasó de 513 a 957 en el año 2021, lo que representa un incremento significativo en un solo año.
         
         Sin embargo, al analizar las empresas que se encuentran en el top 10 en cuanto a valuación, se puede notar que la mayoría de ellas ya existían antes del año 
@@ -311,10 +335,10 @@ if selected == 'Análisis Exploratorio':
         """
 
         # Variable a Graficar:
-        Industry_type  = unicorns.groupby(['Industry_new','Year'])['Company'].count().reset_index()
+        Industry_type  = unicorns.groupby(['Industry:','Year'])['Company'].count().reset_index()
         Industry_type = Industry_type.sort_values(by='Company', ascending=True)
 
-        fig4 = px.area(Industry_type, x="Year", y="Company", color="Industry_new", 
+        fig4 = px.area(Industry_type, x="Year", y="Company", color="Industry:", 
             title='Población por Continentes',
             color_discrete_sequence = colors,
             template="plotly_dark")
@@ -582,13 +606,25 @@ if selected == 'Conclusión':
     """
     Al responder a nuestras preguntas iniciales, observamos lo siguiente:
 
+    * Existen en la actuaidad 1.215 empresas unicornios por un valor total de $ 3.865 mil millones.
+    
     * La mayor concentración de empresas unicornios se encuentra en **Estados Unidos** con **656** empresas luego están **China** e **India** con **171** y **70** 
     empresas respectivamente. 
+    
     * La industria **"Internet Software & Services"** es la que predomina con un 30% del total de empresas unicornio.
+    
     * A partir del año **2020**, estas empresas han experimentado un **crecimiento exponencial**, casi duplicando su cantidad para el año 2021.
+    
     * Cuando se realiza los *test de hipótesis*, se observó que **puede existir una influencia** en el valor sí la empresa **pertenece** a de **Estados Unidos** en 
     comparación con **China**.
+    
     * Por el contrario, **no** encontramos un **factor determinante** en la valuación si la empresa ha alcanzado transformarse en unicornio en el año **2020**.
+
+    **Continuación de este trabajo**
+
+    * Generar un módolo de reporting donde los usuasrios puedan descargar los gráficos e información a modo de reporte, seleccionado diferentes filtros como: fechas, 
+    paises, industrias entre otros.
+    * Realizar un modelo de series temporales y generar un modelo predictivo de la cantidad de empresas unicornios en los siguientes años.
 
     **Futuros estudios posibles** :
     
