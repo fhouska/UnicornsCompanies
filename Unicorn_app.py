@@ -280,7 +280,7 @@ if selected == 'Análisis Exploratorio':
         número de empresas unicornio pasó de 513 a 957 en el año 2021, lo que representa un incremento significativo en un solo año.
         
         Sin embargo, al analizar las empresas que se encuentran en el top 10 en cuanto a valuación, se puede notar que la mayoría de ellas ya existían antes del año 
-        2020. Solo 3 de las empresas que forman parte del top 10 ingresaron después del año 2020. Esto sugiere que las empresas que han logrado alcanzar una alta 
+        2020. Solo 2 de las empresas que forman parte del top 10 ingresaron después del año 2020. Esto sugiere que las empresas que han logrado alcanzar una alta 
         valuación han sido establecidas previamente y han logrado un crecimiento sostenido en el tiempo.
 
         """

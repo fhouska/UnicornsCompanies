@@ -34452,3 +34452,15 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2023-07-20 20:51:37,778:WARNING:
 'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 22:34:59,263:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 22:34:59,263:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 22:34:59,263:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 22:34:59,263:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 22:35:00,998:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-20 22:40:25,832:INFO:Initializing load_model()
+2023-07-20 22:40:25,832:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
