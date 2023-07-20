@@ -106,12 +106,12 @@ if selected == 'Introducción':
 
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Qué es una empresa unicornio?</h3>", unsafe_allow_html=True)
     """
-    El término "unicornio" fue utilizado por primeva vez en un artículo publicado en *TechCrunch* por *Aileen Lee* para *Cowboy Ventures*."""
+    El término "unicornio" fue utilizado por primeva vez en el año 2013 en un artículo publicado en *TechCrunch* por *Aileen Lee* para *Cowboy Ventures*."""
     link_text = "[Ver publicación aquí](https://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/)"
     st.markdown(link_text, unsafe_allow_html=True)
 
-    """Se utiliza para describir a aquellas empresas startups que alcanzan una valuación de mercado de **1 mil millones de dólares** antes 
-    de salir a bolsa o ser adquiridas por otra empresa en un período relativamente corto, por lo general menos de **10 años**.
+    """Se utiliza para describir a aquellas empresas startups que se apoyan en la innovación tecnológica y que alcanzan una valuación de mercado de 
+    **1.000 millones de dólares** antes de salir a bolsa o ser adquiridas por otra empresa en un período relativamente corto, por lo general menos de **10 años**.
     """
 
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Dónde se obtienen los datos?</h3>", unsafe_allow_html=True)
@@ -244,10 +244,9 @@ if selected == 'Análisis Exploratorio':
         """
         **Industrias**
 
-        Se observa que la **industria tecnológica** tiene una presencia significativa en el mundo de las empresas unicornio. Al considerar el conteo de empresas en 
-        función de su categoría, se identificaron dos categorías principales que representan una parte considerable del total: 
-        Primero **"Internet Software & Services"**  representa aproximadamente el 30%  y en segundo lugar a **"Finance Technology"** que representa alrededor del 
-        18% del total de empresas unicornio. Estas dos categorías en conjunto representan casi la mitad de todas las empresas unicornio.
+        Al considerar el conteo de empresas en función de su categoría, se identificaron dos categorías principales que representan una parte considerable del total: 
+        Primero **"Internet Software & Services"**  representa aproximadamente el **30%**  y en segundo lugar a **"Finance Technology"** que representa alrededor del 
+        **18%** del total de empresas unicornio. Estas dos categorías en conjunto representan casi la mitad de todas las empresas unicornio.
 
         """
     with tab3:
@@ -308,8 +307,7 @@ if selected == 'Análisis Exploratorio':
         reclasificaciones dado que eran diferentes datasets, y se encontraron empresas con diferentes industrias. Lo que se optó fue tomar la última 
         clasificación del 2023 y, para aquellas empresas que ya no están, se las incluyó en el concepto "Otros".
 
-        Teniendo en cuenta lo anterior, se destaca el crecimiento de la industria "Tecnología Financiera" (Finance Technology), seguida de cerca por 
-        "Salud y Bienestar" (Health & Wellness).
+        Teniendo en cuenta lo anterior, se destaca el crecimiento de la industria "Finance Technology", seguida de cerca por "Health & Wellness".
         """
 
         # Variable a Graficar:
@@ -332,9 +330,8 @@ if selected == 'Análisis Exploratorio':
         st.plotly_chart(fig4,use_container_width=True)
 
         """
-        Este gráfico de Distribución de las valuaciones de las industrias muestra el valor de las empresas a lo largo del período. 
-        Se puede observar que las empresas de mayor valuación son aquellas que pertenecen a la industria de "Internet, Software y Servicios" 
-        (Internet software & services).
+        Este gráfico de distribución muestra el valor de las empresas unicornios acumulado en el período 2015 y 2023. 
+        Se puede observar que las empresas de mayor valuación son aquellas que pertenecen a la industria de "Internet software & services".
         """
 
         # Variable a Graficar:
