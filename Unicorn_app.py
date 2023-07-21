@@ -631,8 +631,17 @@ if selected == 'Conclusión':
     Analizar como la presencia de estas empresas ha impactado en la situación económica del país, en términos de creación de empleo, nuevas inversiones y el fomento de 
     innovaciones tecnológicas.
     """
-    st.write("<h4 style='text-ana: center; color: #7B1C79;'>¡Muchas Gracias!</h4>", unsafe_allow_html=True)
 
+    
+    
+
+    st.write("<h4 style='text-ana: center; color: #7B1C79;'>¡Muchas Gracias!</h4>", unsafe_allow_html=True)
+    st.write("<h5 style='text-ana: center; color: #7B1C79;'>  </h5>", unsafe_allow_html=True)
+
+    link_text = "[Linkedin](www.linkedin.com/in/fabiana-houska-costa)"
+    
+    st.write("<h5 style='text-ana: center; color: #7B1C79;'>in/fabiana-houska-costa</h5>", unsafe_allow_html=True)
+    st.markdown(link_text, unsafe_allow_html=True)
 
 
 
