@@ -91,6 +91,16 @@ st.sidebar.title (' ')
  
 if selected == 'Introducción':
     st.markdown("<h2 style='text-ana: center; color: #7B1C79;'>Introducción</h2>", unsafe_allow_html=True)
+
+    st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Qué es una empresa unicornio?</h3>", unsafe_allow_html=True)
+    """
+    El término "unicornio" fue utilizado por primeva vez en el año 2013 en un artículo publicado en *TechCrunch* por *Aileen Lee* para *Cowboy Ventures*."""
+    link_text = "[Ver publicación aquí](https://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/)"
+    st.markdown(link_text, unsafe_allow_html=True)
+
+    """Se utiliza para describir a aquellas empresas startups que se apoyan en la innovación tecnológica y que alcanzan una valuación de mercado de 
+    **1.000 millones de dólares** antes de salir a bolsa o ser adquiridas por otra empresa en un período relativamente corto, por lo general menos de **10 años**.
+    """
     
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Por qué elegir analizar las empresas unicornios?</h3>", unsafe_allow_html=True)
     """
@@ -104,15 +114,7 @@ if selected == 'Introducción':
 
     """
 
-    st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Qué es una empresa unicornio?</h3>", unsafe_allow_html=True)
-    """
-    El término "unicornio" fue utilizado por primeva vez en el año 2013 en un artículo publicado en *TechCrunch* por *Aileen Lee* para *Cowboy Ventures*."""
-    link_text = "[Ver publicación aquí](https://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/)"
-    st.markdown(link_text, unsafe_allow_html=True)
 
-    """Se utiliza para describir a aquellas empresas startups que se apoyan en la innovación tecnológica y que alcanzan una valuación de mercado de 
-    **1.000 millones de dólares** antes de salir a bolsa o ser adquiridas por otra empresa en un período relativamente corto, por lo general menos de **10 años**.
-    """
 
     st.markdown("<h3 style='text-ana: center; color: #7B1C79;'>¿Dónde se obtienen los datos?</h3>", unsafe_allow_html=True)
     """
@@ -217,14 +219,14 @@ if selected == 'Análisis Exploratorio':
         # Ordenar 
         continent_percentage = continent.sort_values(by='Percentage', ascending=False)
 
-
+        custom_font = dict(family="Arial, sans-serif", size=12, color="black")
         fig = px.bar(continent_percentage, x="Year", y="Percentage", color="Continent",
              template="plotly_dark", color_discrete_sequence=colors)
 
         fig.update_layout(
             title='Porcentaje de Empresas en la Lista por Continente y Año',
-            xaxis=dict(title='Año'),
-            yaxis=dict(title='Porcentaje'),
+            xaxis=dict(title='Año',tickfont=custom_font),
+            yaxis=dict(title='Porcentaje',tickfont=custom_font),
             showlegend=True     
         )
         fig.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
@@ -338,14 +340,15 @@ if selected == 'Análisis Exploratorio':
         Industry_type  = unicorns.groupby(['Industry:','Year'])['Company'].count().reset_index()
         Industry_type = Industry_type.sort_values(by='Company', ascending=True)
 
+        custom_font = dict(family="Arial, sans-serif", size=12, color="black")
         fig4 = px.area(Industry_type, x="Year", y="Company", color="Industry:", 
             title='Población por Continentes',
             color_discrete_sequence = colors,
             template="plotly_dark")
         fig4.update_layout(
         title='Evolución de Industrias a lo Largo de los Años',
-        xaxis=dict(title='Cantidades'),
-        yaxis=dict(title=' '),
+        xaxis=dict(title='Cantidades',tickfont=custom_font),
+        yaxis=dict(title=' ',tickfont=custom_font),
         showlegend=True
         )
         fig4.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
@@ -368,8 +371,8 @@ if selected == 'Análisis Exploratorio':
              )
         fig5.update_layout(
         title='Distribución de Valuaciones de Empresas Unicornio por Industria',
-        xaxis=dict(title='Valuación'),
-        yaxis=dict(title=' '),
+        xaxis=dict(title='Valuación',tickfont=custom_font),
+        yaxis=dict(title=' ',tickfont=custom_font),
         showlegend=False
         )
         fig5.update_layout({'plot_bgcolor': 'rgba(255, 255, 255, 0.4)',
