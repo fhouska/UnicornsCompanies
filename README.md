@@ -2,19 +2,11 @@
 
 Aquí pueden ver mi trabajo fila del Bootcamp de data analytycs que realicé en [Upgrade Hub](https://www.upgrade-hub.com/) 
 
-El objetivo de este trabajo es analizar las empresas unicornios en la actualidad
-
-
-
-
-
-¿Por qué elegir analizar las empresas unicornios?
+# ¿Por qué elegir analizar las empresas unicornios?
 La curiosidad y la relevancia que tienen las empresas unicornio en el mundo empresarial y tecnológico actual fueron los motores que inspiraron la realización de este trabajo. Las empresas unicornio son reconocidas por su capacidad para innovar y liderar en el ámbito tecnológico.
 
 A través de este análisis, se pretende contestar:
-
-¿En qué áreas específicas operan?
-¿Qué países presentan una mayor concentración de este tipo de empresas?
-¿Cómo han evolucionado en el tiempo?
-
+* ¿En qué áreas específicas operan?
+* ¿Qué países presentan una mayor concentración de este tipo de empresas?
+* ¿Cómo han evolucionado en el tiempo?
 
