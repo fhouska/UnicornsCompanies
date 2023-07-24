@@ -1,6 +1,6 @@
 ![Cover Image](picture/Titulo.png)
 
-![Image](Data/mapa.html)
+![Image](newplot/Titulo.png)
 
 Aquí pueden ver mi trabajo final del Bootcamp de data analytycs que realicé en [Upgrade Hub](https://www.upgrade-hub.com/) 
 
