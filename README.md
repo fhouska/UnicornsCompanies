@@ -1,6 +1,7 @@
 ![Cover Image](picture/Titulo.png)
 
 ![Image](newplot/Titulo.png)
+<img src="https://github.com/fhouska/UnicornsCompanies/picture/newplot.png" alt="Texto alternativo" width="200" height="200">
 
 Aquí pueden ver mi trabajo final del Bootcamp de data analytycs que realicé en [Upgrade Hub](https://www.upgrade-hub.com/) 
 
