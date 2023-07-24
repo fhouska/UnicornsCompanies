@@ -34464,3 +34464,53 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
 'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
 2023-07-20 22:40:25,832:INFO:Initializing load_model()
 2023-07-20 22:40:25,832:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 07:50:20,183:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-21 07:50:20,183:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-21 07:50:20,183:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-21 07:50:20,183:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-21 07:50:31,685:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-21 09:57:28,749:INFO:Initializing load_model()
+2023-07-21 09:57:28,750:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:57:54,979:INFO:Initializing load_model()
+2023-07-21 09:57:54,979:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:58:02,476:INFO:Initializing load_model()
+2023-07-21 09:58:02,477:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:58:05,982:INFO:Initializing load_model()
+2023-07-21 09:58:05,983:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:58:10,351:INFO:Initializing load_model()
+2023-07-21 09:58:10,352:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:58:24,430:INFO:Initializing load_model()
+2023-07-21 09:58:24,431:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:58:27,020:INFO:Initializing load_model()
+2023-07-21 09:58:27,051:INFO:load_model(model_name=Data/ml_unicornios, platform=None, authentication=None, verbose=True)
+2023-07-21 09:58:27,324:INFO:Initializing predict_model()
+2023-07-21 09:58:27,324:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CD8CD3CDF0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\fabia\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Year_Founded', 'Funding',
+                                             'Years_Since_Founded',
+                                             'Funding_Age_Ratio', 'ROI'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['Industry', 'Country',
+                                             'Continent'],
+                                    transformer=SimpleImputer(s...
+                                    transformer=OneHotEncoder(cols=['Industry',
+                                                                    'Continent'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['Country'],
+                                    transformer=TargetEncoder(cols=['Country'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=4195))),
+                ('actual_estimator', LinearRegression(n_jobs=-1))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CD8CC0F880>)
+2023-07-21 09:58:27,327:INFO:Checking exceptions
+2023-07-21 09:58:27,328:INFO:Preloading libraries
+2023-07-21 09:58:27,329:INFO:Set up data.
+2023-07-21 09:58:27,344:INFO:Set up index.
