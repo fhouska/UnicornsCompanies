@@ -14,7 +14,9 @@ Para realizar este trabajo se recopilaron datos de una plataforma de análisis d
 ***unicorns_powerbi.csv*** --> DataSet preparado para armar tablero de PoweBi  
     
 **CARPETAS:**  
-***Data*** --> Carpeta con DataSets y Archivo preparado para MachineLearning  
+***Data*** --> Carpeta con DataSets  
+  --> Carpeta con archivo preparado para MachineLearning 
+
 ***.steamlit*** --> config.toml (Configuación de la vista de Streamlit)
 ***picture*** --> Fondo utilizado para Streamlit
 
