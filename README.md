@@ -9,16 +9,27 @@ Las empresas unicornio son reconocidas por su capacidad para innovar y liderar e
 Para realizar este trabajo se recopilaron datos de una plataforma de análisis de negocios globales conocida como CB Insights.
 
 ## Contenido:
-***Trabajo_Final-ipynb*** --> JupiterNote  
-***unicorns_final.csv*** --> DataSet final luego del procesamiento de datos  
-***unicorns_powerbi.csv*** --> DataSet preparado para armar tablero de PoweBi  
-    
+***Trabajo_Final-ipynb*** --> JupiterNote.  
+***Modelo.ipynb*** --> JupiterNote.  
+***requirements.txt*** -->  Requerimientos.  
+***Unicorn_app.py*** --> App de Steamlit.  
+***Unicorn_Companies.pbix*** --> Archivo PoweBI.  
+  
 **CARPETAS:**  
-***Data*** --> Carpeta con DataSets  
-  --> Carpeta con archivo preparado para MachineLearning 
+***Data***   
+  --> Carpeta con DataSets  
+  --> Carpeta MachineLearning con archivo preparado.  
+  --> countries.geojson: para la elaboración de mapa.  
+  --> df_reg.csv: Para realizar el modelo de regreción.    
+  --> imf-dm-export-20230712.xls: PBI de los países para continar el análisis.  
+  --> mapa.html: Mapa para uitilizarlo en Streamlit.  
+  --> ml_unicornios.pkl: Modelo final para Streamlit.  
+  --> ***unicorns_final.csv*** --> DataSet final (luego del procesamiento) para usar en SrteamLit.  
+  --> ***unicorns_powerbi.csv*** --> DataSet preparado para armar tablero de PoweBi.
+  
 
 ***.steamlit*** --> config.toml (Configuación de la vista de Streamlit)
-***picture*** --> Fondo utilizado para Streamlit
+***picture*** --> Fondo y logo utilizado para Streamlit
 
 
 
