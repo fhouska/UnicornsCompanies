@@ -23,7 +23,7 @@ Para ver la presentación de este proyecto les dejo aquí el enlace de la app qu
 - ¿Dónde se obtienen los datos?  
   
 #### - Análisis Exploratorio
-- Mapa y grpafica de distribución geográfica a Mayo 2023.
+- Mapa y gráfica de distribución geográfica a Mayo 2023.
 - Tablero de visualización dinámico con **Power BI**.
 - Análisis de la evolución en el tiempo.
 - Exploración de las industrias.
